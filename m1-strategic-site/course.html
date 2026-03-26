@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Module 1 — The Strategic Site | ISU–GSA Spaceport Leadership</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="course-app">
+
+  <!-- ── SIDEBAR ─────────────────────────────────────────── -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <div class="sidebar-brand">
+        <span class="brand-text">ISU</span>
+        <span class="brand-sep">×</span>
+        <span class="brand-text">GSA</span>
+      </div>
+      <div class="sidebar-module-title">Module 1 of 6</div>
+      <div class="sidebar-module-name">The Strategic Site</div>
+    </div>
+
+    <div class="progress-bar-wrap">
+      <div class="progress-label">
+        <span>Progress</span>
+        <span id="progressPct">0%</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill" id="progressFill" style="width:0%"></div>
+      </div>
+    </div>
+
+    <nav class="segment-nav" id="segmentNav">
+      <!-- Rendered by JS -->
+    </nav>
+
+    <div class="sidebar-footer">
+      <a href="index.html" class="sidebar-back">
+        ← Course home
+      </a>
+    </div>
+  </aside>
+
+  <!-- ── MAIN CONTENT ────────────────────────────────────── -->
+  <main class="course-main" id="courseMain">
+
+    <!-- Sticky topbar -->
+    <div class="course-topbar">
+      <span class="topbar-seg-name" id="topbarSegName"></span>
+      <div class="topbar-actions">
+        <span style="font-size:0.72rem; color:var(--slate); letter-spacing:0.06em;">
+          ISU–GSA Global Spaceport Leadership Series
+        </span>
+      </div>
+    </div>
+
+    <!-- Dynamic content container -->
+    <div id="segmentContainer" style="transition: opacity 0.3s ease, transform 0.3s ease;">
+      <!-- Loaded by JS -->
+    </div>
+
+  </main>
+
+</div>
+
+<script src="js/course.js"></script>
+<script>
+  // After navigate, re-wire nav footer buttons
+  const _origNav = CourseApp.navigate;
+  // nav footer is rendered inside navigate() via renderNavFooter
+  // On DOMContentLoaded, course app inits — wire up nav footer
+  document.addEventListener('DOMContentLoaded', function() {
+    // Re-render nav footer after segment loads
+    const container = document.getElementById('segmentContainer');
+    const observer = new MutationObserver(function() {
+      const footer = document.getElementById('segNavFooter');
+      if (footer) {
+        CourseApp.navigate; // trigger nav footer re-render
+        // Nav footer is rendered by renderNavFooter inside navigate
+      }
+    });
+    if (container) observer.observe(container, { childList: true, subtree: false });
+  });
+</script>
+</body>
+</html>
