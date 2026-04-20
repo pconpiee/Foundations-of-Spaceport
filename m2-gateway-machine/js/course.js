@@ -404,11 +404,11 @@ const CourseApp = (function() {
             <div style="font-size:0.72rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--slate);">Segments completed</div>
           </div>
         </div>
-        <div style="background:var(--surface); border:1px solid rgba(201,168,76,0.2); border-radius:16px; padding:2rem; max-width:560px; margin:0 auto 2rem;">
+        <a href="../m3-rules-of-space/index.html" style="display:block; background:var(--surface); border:1px solid rgba(201,168,76,0.2); border-radius:16px; padding:2rem; max-width:560px; margin:0 auto 2rem; text-decoration:none;">
           <div style="font-size:0.65rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--gold); margin-bottom:0.75rem;">Up next</div>
           <div style="font-family:var(--font-display); font-size:1.4rem; color:var(--white); margin-bottom:0.5rem;">Module 3 — The Rules of Space</div>
-          <div style="font-size:0.85rem; color:var(--slate-light);">Regulatory Frameworks &amp; Licensing · ~2.5 hours · Coming soon</div>
-        </div>
+          <div style="font-size:0.85rem; color:var(--slate-light);">Regulatory Frameworks · Licensing · International Law · ~2.5 hours →</div>
+        </a>
         <a href="index.html" class="btn-ghost">← Back to module home</a>
       </div>`;
   }
