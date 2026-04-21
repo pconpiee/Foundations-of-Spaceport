@@ -32,7 +32,7 @@ const CourseApp = (function() {
     { id: 's6-5',   code: '6.5',   name: 'Crisis Leadership',                          dur: '13 min', group: 'Module 6 — The Strategic Leader' },
     { id: 's6-6',   code: '6.6',   name: 'The Synthesis',                              dur: '14 min', group: 'Module 6 — The Strategic Leader' },
     { id: 's6-7',   code: '6.7',   name: 'Your Leadership Agenda',                     dur: '10 min', group: 'Module 6 — The Strategic Leader' },
-    { id: 'case',   code: 'CASE',  name: 'Case Study — George Nield',                  dur: '20 min', group: 'Case Study' },
+    { id: 'case',   code: 'CASE',  name: 'Case Study — Wallops Island, 2014',          dur: '20 min', group: 'Case Study' },
     { id: 'check',  code: 'CHECK', name: 'Module Knowledge Check',                     dur: '10 min', group: 'Assessment' },
   ];
 
@@ -43,11 +43,11 @@ const CourseApp = (function() {
       text: 'What distinguishes leadership of a commercial spaceport from general executive leadership of a comparably sized infrastructure organization?',
       options: [
         { id: 'a', text: 'Spaceport leaders must have engineering degrees because the technical content of the work requires domain expertise.' },
-        { id: 'b', text: 'The combination of absolute safety accountability (where failure can be catastrophic), multi-party authority structures (no single party controls all variables), government-commercial ambiguity, and the pace of market change creates a leadership complexity that is qualitatively different from most infrastructure leadership roles.' },
+        { id: 'b', text: 'The regulatory requirements are more complex than in comparable infrastructure sectors.' },
         { id: 'c', text: 'Spaceport leaders are accountable to more stakeholders than leaders of other infrastructure organizations.' },
-        { id: 'd', text: 'The regulatory requirements are more complex than in comparable infrastructure sectors.' },
+        { id: 'd', text: 'The combination of absolute safety accountability (where failure can be catastrophic), multi-party authority structures (no single party controls all variables), government-commercial ambiguity, and the pace of market change creates a leadership complexity that is qualitatively different from most infrastructure leadership roles.' },
       ],
-      correct: 'b',
+      correct: 'd',
       rationale: 'Correct. The distinguishing characteristics of spaceport leadership are qualitative, not quantitative. The absolute nature of safety accountability — where a launch accident is a catastrophic, public, politically consequential event — creates a leadership standard that differs from most infrastructure leadership. The multi-party authority structure means the executive cannot rely on organizational authority to ensure operational outcomes — they must achieve alignment through influence, relationships, and shared culture. The government-commercial ambiguity (many spaceports are simultaneously government entities and commercial enterprises) creates governance complexity that is unusual. And the pace of change in the commercial space market means the strategic environment is shifting faster than most comparable infrastructure sectors. These factors in combination create a distinctive leadership challenge.',
     },
     {
@@ -68,12 +68,12 @@ const CourseApp = (function() {
       lo: 'LO6.3',
       text: 'A commercial spaceport\'s strategic risk register identifies "loss of primary operator" as a high-probability, high-impact risk. The risk owner proposes mitigating it by negotiating a longer-term contract with the primary operator. Why is this mitigation strategy insufficient?',
       options: [
-        { id: 'a', text: 'Longer-term contracts are not enforceable in commercial launch services.' },
-        { id: 'b', text: 'A longer-term contract with the same operator reduces the probability of voluntary operator departure but does not mitigate the risk of involuntary loss — vehicle grounding, company financial failure, program cancellation, or regulatory suspension — which are often the highest-probability drivers of operator loss.' },
+        { id: 'a', text: 'A longer-term contract with the same operator reduces the probability of voluntary operator departure but does not mitigate the risk of involuntary loss — vehicle grounding, company financial failure, program cancellation, or regulatory suspension — which are often the highest-probability drivers of operator loss.' },
+        { id: 'b', text: 'Longer-term contracts are not enforceable in commercial launch services.' },
         { id: 'c', text: 'The FAA will not approve launch licenses that include long-term exclusivity provisions.' },
         { id: 'd', text: 'Longer contracts increase legal exposure if the operator subsequently fails to perform.' },
       ],
-      correct: 'b',
+      correct: 'a',
       rationale: 'Correct. Contract extension addresses the risk of voluntary operator departure — the operator choosing to leave — but is ineffective against the risk scenarios that are often more likely: a vehicle anomaly that grounds the fleet for an extended period (like the Falcon 9 AMOS-6 explosion in 2016, which grounded the fleet for four months), a company financial crisis, or a government regulatory action that suspends launch license operations. These events are not controllable by contract — an operator whose vehicle has been grounded cannot launch regardless of contractual commitments. Effective mitigation of the "loss of primary operator" risk requires: operator diversification (multiple operators so no single loss is existential), financial reserves (cash reserves to sustain operations through an extended cadence disruption), and financial structures that reduce fixed cost exposure during low-cadence periods.',
     },
     {
@@ -82,11 +82,11 @@ const CourseApp = (function() {
       text: 'A newly appointed spaceport executive director inherits an organization with a culture of deference to the incumbent launch operator — staff routinely accommodates operator requests that exceed contract terms, safety documentation is submitted late without consequence, and operations meetings are managed by the operator\'s personnel rather than the spaceport\'s. The executive director wants to shift to a more balanced, contract-based relationship. What is the most important first step?',
       options: [
         { id: 'a', text: 'Immediately invoke the contract\'s notice provisions and place the operator on a formal performance improvement plan.' },
-        { id: 'b', text: 'Build internal organizational capability and confidence first: ensure the spaceport\'s own staff have the training, authority, and leadership support to exercise their professional responsibilities — then begin the process of resetting the operator relationship from a position of organizational competence.' },
-        { id: 'c', text: 'Renegotiate the Launch Services Agreement to remove the provisions the operator has been violating.' },
+        { id: 'b', text: 'Renegotiate the Launch Services Agreement to remove the provisions the operator has been violating.' },
+        { id: 'c', text: 'Build internal organizational capability and confidence first: ensure the spaceport\'s own staff have the training, authority, and leadership support to exercise their professional responsibilities — then begin the process of resetting the operator relationship from a position of organizational competence.' },
         { id: 'd', text: 'Commission an independent operational audit to document the current situation before taking any action.' },
       ],
-      correct: 'b',
+      correct: 'c',
       rationale: 'Correct. The most important first step is internal: building the organizational capability and confidence that has been eroded by a culture of deference. An executive director who attempts to reset the external operator relationship without first rebuilding internal organizational competence will find that their own staff — who have been accommodating the operator\'s requests because they didn\'t feel empowered to do otherwise — will not be able to maintain the new posture. The sequence matters: (1) signal to staff that they have executive support for exercising their professional responsibilities; (2) invest in training and process clarity so staff understand what the expected standard is; (3) establish internal accountability for meeting that standard; (4) begin the external relationship reset from a position where the spaceport\'s team is capable of performing to the standard you are asserting. Confronting the operator before the internal organization is ready creates a conflict the spaceport cannot sustain.',
     },
     {
@@ -108,11 +108,11 @@ const CourseApp = (function() {
       text: 'Module 6 synthesizes the five preceding modules into an integrated strategic architecture. Which pairing correctly identifies the primary dependency between two of the module topics?',
       options: [
         { id: 'a', text: 'The regulatory framework (M3) determines site selection (M1) — the FAA\'s geographic licensing criteria dictate where spaceports can be located.' },
-        { id: 'b', text: 'The business model (M4) determines the partnership architecture (M5) — the revenue model determines which partners the spaceport needs and what it can offer them.' },
+        { id: 'b', text: 'The leadership model (M6) determines the financial model (M4) — a good leader can make any financial model work.' },
         { id: 'c', text: 'The operations model (M2) determines the regulatory framework (M3) — the facility\'s operational capabilities shape the FAA\'s licensing requirements.' },
-        { id: 'd', text: 'The leadership model (M6) determines the financial model (M4) — a good leader can make any financial model work.' },
+        { id: 'd', text: 'The business model (M4) determines the partnership architecture (M5) — the revenue model determines which partners the spaceport needs and what it can offer them.' },
       ],
-      correct: 'b',
+      correct: 'd',
       rationale: 'Correct. The business model (M4 — finance, revenue structure, investment thesis) has a primary dependency relationship with the partnership architecture (M5 — government, operators, stakeholders, contracts). The revenue model determines: which operators the spaceport needs (the anchor tenant analysis); what the spaceport can offer government partners (economic development returns vs. subsidy requirements); what the spaceport can commit to in contracts (minimum revenue, operational service levels); and how much investment the spaceport can attract (capital structure vs. revenue coverage). A spaceport that cannot demonstrate a viable revenue model cannot attract the government partners, the institutional capital, or the operator commitments that constitute a viable partnership architecture. M4 and M5 are interdependent — but the causal flow from financial model to partnership architecture is stronger than the reverse.',
     },
     {
@@ -120,26 +120,26 @@ const CourseApp = (function() {
       lo: 'LO6.7',
       text: 'A newly appointed spaceport director is developing their 90-day leadership agenda. They have identified 12 priorities from the course content. What is the most important discipline in converting a 12-priority list into an executable plan?',
       options: [
-        { id: 'a', text: 'Delegate all 12 priorities to direct reports simultaneously to accelerate execution.' },
-        { id: 'b', text: 'Sequence the priorities: identify which priorities are foundational (must be in place before others can proceed), which are urgent (time-sensitive window), which are strategic (define long-term direction), and execute in that order — starting with the foundational and urgent items regardless of their strategic significance.' },
+        { id: 'a', text: 'Sequence the priorities: identify which priorities are foundational (must be in place before others can proceed), which are urgent (time-sensitive window), which are strategic (define long-term direction), and execute in that order — starting with the foundational and urgent items regardless of their strategic significance.' },
+        { id: 'b', text: 'Delegate all 12 priorities to direct reports simultaneously to accelerate execution.' },
         { id: 'c', text: 'Address priorities in order of political visibility — starting with the most publicly visible initiatives to build credibility with stakeholders.' },
         { id: 'd', text: 'Complete the most analytically tractable priorities first to build organizational momentum.' },
       ],
-      correct: 'b',
+      correct: 'a',
       rationale: 'Correct. A 12-priority agenda is not an agenda — it is a list. Effective executive leadership requires sequencing priorities according to their dependencies and urgency. The discipline is: identify foundational priorities (the safety culture assessment, the financial model review, the operator relationship status — things that inform all other priorities) and urgent priorities (time-sensitive windows — a contract renewal coming up in 60 days, a budget request due to the state legislature, an FAA license renewal in 90 days) and execute those first, regardless of their strategic significance. Strategic priorities — the multi-year initiatives that will define the facility\'s trajectory — are important but they are typically not time-sensitive in the first 90 days. An executive who leads with strategic initiatives before understanding the foundational state of the organization risks investing energy in the wrong priorities based on an incomplete picture.',
     },
     {
       id: 'q8',
-      lo: 'LO6.1',
-      text: 'George Nield\'s career spanned three decades in commercial space transportation regulation and policy. What is the most important transferable leadership principle from his career trajectory that applies to spaceport executive leadership?',
+      lo: 'LO6.6',
+      text: 'A new executive director\'s first week surfaces five simultaneous findings: (1) the primary launch pad has an unresolved structural anomaly from the most recent campaign; (2) the anchor operator has notified intent to transition to a new vehicle requiring pad modification within 18 months; (3) the facility\'s debt service coverage ratio is 0.87 — below the bond covenant threshold; (4) the Operations Director retires in 60 days; (5) the state governor\'s office requests a briefing within two weeks for an economic development press release. Applying the integrated framework from this course, what is the correct sequencing?',
       options: [
-        { id: 'a', text: 'Technical expertise is the primary qualification for senior leadership in the space sector.' },
-        { id: 'b', text: 'Sustained contribution to an industry requires the ability to operate effectively at the interface of government authority and commercial aspiration — maintaining safety standards while enabling innovation, and building the relationships that allow both to coexist.' },
-        { id: 'c', text: 'Senior leaders should focus their careers on a single organization to develop deep institutional knowledge.' },
-        { id: 'd', text: 'Regulatory experience is more valuable than commercial experience for spaceport leadership roles.' },
+        { id: 'a', text: 'Prioritize the governor\'s briefing first: maintaining state political support is the foundation for operational and financial flexibility, and early engagement signals institutional competence.' },
+        { id: 'b', text: 'Address the DSCR covenant breach as the first action: lender notification and a remediation plan must precede all other commitments to preserve the facility\'s financial capacity to act on anything else.' },
+        { id: 'c', text: 'Resolve the pad structural anomaly before all other items — a known safety finding cannot be deferred while other priorities compete — then address the Operations Director succession, DSCR covenant, and vehicle transition in that order, with the governor\'s briefing scheduled once there are facts worth reporting.' },
+        { id: 'd', text: 'Treat the anchor operator vehicle transition as the highest-priority item because it defines the capital program and revenue model for the next decade, and the 18-month planning window is already compressed.' },
       ],
-      correct: 'b',
-      rationale: 'Correct. George Nield\'s career — from FAA engineer to Associate Administrator for Commercial Space Transportation to President of the Global Spaceport Alliance — exemplifies the leadership principle of operating effectively at the government-commercial interface. At the FAA, he was responsible for maintaining safety standards that protected the public while his statutory mandate also required him to enable and promote commercial space transportation. The tension between these objectives — safety and enablement — is not resolved by choosing one over the other; it is managed by building the regulatory frameworks, the relationships, and the institutional culture that allow both to advance simultaneously. This is the central leadership challenge of commercial spaceport leadership: enabling commercial operations that push the technical and commercial frontier while maintaining the safety and regulatory standards that protect the public and preserve the industry\'s license to operate.',
+      correct: 'c',
+      rationale: 'Correct. The integrated framework from this course produces a clear sequence. Safety (M3, M6.5): a known, unresolved structural anomaly is non-negotiable — operations cannot proceed with a documented safety finding open, and no other priority justifies deferring it. Succession (M6.1): the Operations Director departure is a 60-day clock that starts now; this is a foundational capability risk that must be addressed in parallel with the safety resolution. Financial triage (M4): the DSCR covenant breach requires creditor engagement, but the remediation plan takes weeks to develop — begin this in parallel, not sequentially. Strategic planning (M5, M4): the vehicle transition is an 18-month horizon item requiring informed analysis, not a day-one action. Political (M6.4): the governor\'s briefing is scheduled, manageable, and is most valuable once you have concrete facts to report. Beginning with the politically visible item (option a) inverts the priority stack. Treating finance first (option b) is correct in sequence behind safety, not ahead of it.',
     },
   ];
 
@@ -684,6 +684,31 @@ CONTENT['s6-7'] = () => `
       <div class="phase-header"><span class="phase-num">WEEK 05–12</span><div class="phase-title">The Priority Agenda</div></div>
       <div class="phase-body">Set no more than three priorities for the first 90 days — selected based on: urgency (what cannot wait), foundation (what must be in place before other things can work), and signal (what most clearly communicates the standards and direction of the new leadership). Execute against those three priorities with specificity and accountability. Delegate the rest. Review progress weekly. The discipline of three priorities, executed well, produces more than a list of twelve priorities, executed partially.</div>
     </div>
+
+    <h2>Priority Selection Matrix</h2>
+    <p>When your diagnostic assessment surfaces more priorities than you can execute simultaneously, use the following matrix to sequence them. Rate each candidate priority on two dimensions: <strong>Time Sensitivity</strong> (does a delay of 30–90 days materially increase cost, risk, or harm?) and <strong>Foundational Dependency</strong> (do other priorities depend on this one being resolved first?). The quadrant determines sequencing.</p>
+    <div class="axis-grid">
+      <div class="axis-card">
+        <span class="axis-num">QUADRANT 1</span>
+        <div class="axis-title">High Time Sensitivity + High Dependency → Execute First</div>
+        <div class="axis-body">Examples: an open safety finding; an FAA license renewal deadline; an Operations Director succession with a 60-day window; a bond covenant breach requiring creditor notification. These are non-negotiable first actions. They are often not the most strategically interesting priorities, but they are the ones where delay compounds harm. A leader who defers a safety finding to pursue a strategic initiative has inverted the priority stack in a way that cannot be undone if something goes wrong.</div>
+      </div>
+      <div class="axis-card">
+        <span class="axis-num">QUADRANT 2</span>
+        <div class="axis-title">High Time Sensitivity + Low Dependency → Execute in Parallel</div>
+        <div class="axis-body">Examples: a state budget request due to the legislature; a media situation requiring a public statement; an operator contract renewal with a fixed deadline. These are time-bounded but do not block other priorities. Execute them in parallel with Q1 items using delegated bandwidth — they should not consume the executive's primary focus.</div>
+      </div>
+      <div class="axis-card">
+        <span class="axis-num">QUADRANT 3</span>
+        <div class="axis-title">Low Time Sensitivity + High Dependency → Schedule Early</div>
+        <div class="axis-body">Examples: the financial model review; the safety culture assessment; the partnership architecture review. These are not urgent in the 30-day sense, but they are foundational — the insights they produce inform the strategic priorities that will define your tenure. Schedule them as structured work in weeks 3–6, not as background reading. They are the foundation of informed leadership.</div>
+      </div>
+      <div class="axis-card">
+        <span class="axis-num">QUADRANT 4</span>
+        <div class="axis-title">Low Time Sensitivity + Low Dependency → Defer or Delegate</div>
+        <div class="axis-body">Examples: brand refresh, website redesign, conference attendance strategy, non-critical facility improvements. These are legitimate organizational needs but they are not 90-day leadership priorities. Delegate them with clear ownership and a timeline. The 90-day agenda that includes a brand refresh is a 90-day agenda that has lost its focus.</div>
+      </div>
+    </div>
     <div class="callout callout-insight">
       <div class="callout-label">The Ongoing Discipline</div>
       <p>The 90-day agenda is a starting point, not an endpoint. The leaders in this industry who have made durable contributions — George Nield's three decades, the executives who have built the Vandenberg commercial ecosystem, the leaders who have navigated multiple market cycles — share a common discipline: they continue learning. They participate in industry forums. They maintain relationships across the sector. They read the technical and commercial literature. They conduct after-action reviews of their own decisions. They build the OODA orientation continuously, so that when decisions must be made quickly, their mental model of the situation is already current and accurate. The ISU–GSA Global Spaceport Leadership Series is designed to build that orientation. What you do with it — in your organization, in your market, in your career — is entirely yours.</p>
@@ -699,53 +724,58 @@ CONTENT['case'] = () => `
       <span class="seg-header-code">CASE STUDY</span>
       <span class="seg-header-meta">20 min · Harvard-style case · Analysis required</span>
     </div>
-    <h1 class="seg-header-title">George Nield:<br><em>Three Decades</em><br>at the Frontier</h1>
-    <p class="seg-header-subtitle">A career that spans the Commercial Space Launch Act to the Global Spaceport Alliance — and the leadership principles derived from three decades at the intersection of government authority and commercial aspiration.</p>
+    <h1 class="seg-header-title">Wallops Island,<br><em>October 2014:</em><br>Leadership Under Fire</h1>
+    <p class="seg-header-subtitle">Six seconds after liftoff, Orbital Sciences' Antares rocket fell back onto Pad 0A at the Mid-Atlantic Regional Spaceport and exploded. No one was injured. The Virginia Commercial Space Flight Authority now owned the hardest 90 days of its institutional life.</p>
     <div class="seg-header-tags">
-      <span class="tag-lo tag">LO6.1 · LO6.2 · LO6.6 — Synthesize</span>
+      <span class="tag-lo tag">LO6.1 · LO6.2 · LO6.5 · LO6.6 — Synthesize</span>
       <span class="tag">Case Study</span>
-      <span class="tag">George Nield</span>
-      <span class="tag">Leadership</span>
+      <span class="tag">Crisis Leadership</span>
+      <span class="tag">MARS / Wallops Island</span>
     </div>
   </div>
   <div class="seg-body">
     <div class="callout callout-insight">
       <div class="callout-label">How to Use This Case</div>
-      <p>This is a career case — an analysis of a leadership trajectory rather than a specific organizational challenge. The objective is to extract transferable principles from an exemplary career, not to evaluate individual decisions in isolation.</p>
+      <p>This is a decision case. You are the Executive Director of the Virginia Commercial Space Flight Authority (VCSFA) — the entity that operates the Mid-Atlantic Regional Spaceport. The event has just happened. Read the situation, then work through the analysis questions before reviewing the outcomes. The objective is to apply the integrated frameworks from all six modules to a real, high-stakes leadership situation.</p>
     </div>
 
-    <h2>Part I — The Early Career: The Technical Foundation</h2>
-    <p>George Nield's career in commercial space transportation began at the FAA in the early 1990s, when the Commercial Space Launch Act of 1984 had created a regulatory framework but the commercial launch industry it was designed to enable was still in its earliest stages. The dominant launch providers were traditional government contractors — McDonnell Douglas, General Dynamics, Martin Marietta — operating expendable launch vehicles under government contracts. The concept of a "commercial" launch market, with private operators competing for satellite deployment customers, was aspirational rather than realized.</p>
-    <p>Nield's early role was technical: developing the safety analysis methodologies and regulatory frameworks that would enable the FAA to license commercial launch operations safely. The work required both deep technical understanding of launch vehicle systems and regulatory design capability — translating complex technical risk analysis into regulatory standards that could be consistently applied across different vehicle types and operational profiles.</p>
-    <p>This technical foundation — which Nield has consistently identified as essential to his subsequent effectiveness — gave him the credibility to engage on equal terms with launch operators' technical teams, the analytical capability to evaluate safety arguments independently rather than deferring to operator representations, and the domain knowledge to recognize when a regulatory requirement was technically justified versus when it was bureaucratic friction without safety value.</p>
+    <h2>The Situation: 6:22 PM, October 28, 2014</h2>
+    <p>Antares ORB-3 lifted off from Pad 0A at the Mid-Atlantic Regional Spaceport on Wallops Island, Virginia at 6:22 PM Eastern time. It carried a Cygnus cargo spacecraft loaded with approximately 5,000 pounds of ISS resupply cargo — crew provisions, science experiments, spare hardware — under NASA's Commercial Resupply Services (CRS) contract with Orbital Sciences Corporation.</p>
+    <p>Approximately six seconds after liftoff, at an altitude of roughly 100 feet, one of the two AJ-26 main engines suffered a catastrophic turbopump failure. The vehicle lost thrust, fell back vertically, and impacted the launch mount. The remaining propellant — approximately 500,000 pounds of kerosene and liquid oxygen — ignited on impact. Pad 0A, the launch mount structure, and surrounding infrastructure were severely damaged. The range had been clear. There were no injuries.</p>
+    <p>The AJ-26 engines were refurbished NK-33 engines manufactured in the Soviet Union in the late 1960s and early 1970s, originally intended for the Soviet N1 lunar program. Orbital Sciences had acquired a stock of these engines from a Russian supplier. The turbopump failure mode that destroyed ORB-3 had, in fact, manifested in a less severe form during a 2013 test — a finding that Orbital Sciences had investigated and assessed as acceptable. That assessment would become part of the post-accident investigation record.</p>
 
-    <h2>Part II — The Middle Career: Building the Framework</h2>
-    <p>As Nield's responsibilities grew at FAA/AST, the commercial launch market began to change around him. The entry of SpaceX in the early 2000s challenged the established regulatory and commercial assumptions. SpaceX's development model — faster, leaner, more willing to accept technical risk in development in exchange for operational speed — required regulatory engagement that was simultaneously safety-rigorous and commercially responsive.</p>
-    <p>The Part 450 reform — the shift from prescriptive, vehicle-specific regulations to performance-based safety standards — was a major regulatory architecture change that Nield's office led. The principle behind Part 450: if an operator can demonstrate that their operation achieves an equivalent or better safety outcome than the prescriptive standard would require, the prescriptive standard should yield to the demonstrated performance. This is sound regulatory philosophy, but it required the FAA to develop the analytical capability to evaluate performance claims — and required the industry to develop the modeling and documentation capability to make those claims credibly.</p>
-    <p>The Part 450 reform illustrates a principle of effective regulatory leadership: the best regulations are developed through genuine engagement with the regulated community, not through unilateral government determination of standards. Nield's approach to the reform process — extensive stakeholder engagement, publication of technical guidance, iterative development that allowed industry feedback to improve the framework — produced a regulation that was both more effective and more commercially enabling than a unilateral approach would have generated.</p>
+    <h2>The First 72 Hours</h2>
+    <p>As VCSFA Executive Director, you have the following immediate situation: (1) Pad 0A is destroyed. The fire is out within hours but the structural damage is extensive and the area is a federal accident investigation scene. You have no access and no timeline for access. (2) Orbital Sciences' launch operations are suspended indefinitely. Their next CRS mission — ORB-4 — is scheduled in 2015. There is no launch manifest for MARS until further notice. (3) NASA is dealing with a significant supply chain impact to ISS. The other CRS provider, SpaceX, will cover interim supply needs. The space station is not at risk, but the PR and political environment is charged. (4) The FAA has opened an accident investigation. Your facility's Site Operator License is not suspended, but access to the pad area is restricted pending investigation. (5) Virginia's Governor's office calls within two hours of the accident: what do you tell them?</p>
+    <p>You also have a communication challenge. Wallops Island is a relatively rural location on the Virginia Eastern Shore. The explosion was visible and audible across a wide area. Social media is active. Local news crews are on the causeway. Three different federal agencies — NASA, FAA, and the U.S. Fish and Wildlife Service (which manages adjacent refuge land) — will want to coordinate public communications. Orbital Sciences has already issued a brief statement confirming the event. Your staff is waiting for your direction.</p>
 
-    <h2>Part III — The Later Career: The Global Spaceport Alliance</h2>
-    <p>After leaving the FAA, Nield founded the Global Spaceport Alliance — an industry organization providing a common platform for commercial spaceport operators globally. The GSA's mission is to support the development of commercial spaceport infrastructure through: technical standards development, safety best practices sharing, regulatory engagement, operator education (the ISU–GSA partnership that produced this course), and industry advocacy.</p>
-    <p>The transition from regulator to industry advocate required the exercise of accumulated relationships and credibility — the trust that Nield had built over decades with both government agencies and commercial operators. His effectiveness in the GSA role depended on being credible to both audiences simultaneously: to government partners as someone who understood the public interest requirements; to commercial operators as someone who understood commercial operational reality. This dual credibility — difficult to build and easily lost — is what makes leaders who have operated effectively at the government-commercial interface genuinely rare.</p>
+    <h2>The Financial Exposure</h2>
+    <p>The financial picture clarifies over the following weeks. VCSFA's revenue model was built around Antares launch campaigns: launch fees, pad use charges, and associated tenant and services revenue. With Orbital Sciences' vehicle grounded pending investigation and engine redesign, MARS faces an extended period of zero launch revenue. The state of Virginia's annual appropriation covers VCSFA's baseline operating costs, but capital recovery — the debt service on the pad and infrastructure investment — depends on launch fee revenue.</p>
+    <p>The pad reconstruction cost is estimated at approximately $15 million. The state of Virginia will ultimately commit to funding the reconstruction — but that commitment takes months to secure, and the design and contracting process takes additional months beyond that. Orbital Sciences, meanwhile, is evaluating its engine options. The AJ-26 inventory is condemned. The company is in negotiation with Yuzhnoye Design Office in Ukraine for replacement RD-181 engines — a procurement that introduces new ITAR considerations and supply chain dependencies given the geopolitical situation in Ukraine in 2014–2015.</p>
+    <p>Orbital Sciences uses the gap period to fulfill its remaining CRS obligations via Atlas V, launched from Cape Canaveral — a decision that keeps the NASA contract alive but generates no revenue for MARS. The facility will not see another Antares launch until October 2016, when Antares 230 — upgraded with RD-181 engines — launches the Cygnus OA-5 mission. The gap is 23 months.</p>
+
+    <h2>The Recovery: Decisions That Defined the Outcome</h2>
+    <p>The VCSFA's path through the 23-month gap involved several leadership decisions that are worth analyzing for their transferable content. First, VCSFA maintained its institutional composure and its operator relationship through the crisis. Rather than treating Orbital Sciences as the cause of the problem — which they arguably were — VCSFA treated them as a partner in recovery, facilitating the investigation access they needed, supporting the pad reconstruction design process collaboratively, and maintaining the relationship that would be essential when Antares returned to flight. A facility that had become adversarial with its primary operator during the gap would have been poorly positioned for the return-to-flight campaign.</p>
+    <p>Second, VCSFA and the state of Virginia used the gap period to complete infrastructure improvements that would have been difficult to execute during active launch operations. The pad reconstruction incorporated upgrades beyond simple repair. This is a genuine silver lining in an otherwise costly event: forced downtime created an improvement opportunity.</p>
+    <p>Third, VCSFA began developing its multi-operator strategy more aggressively during the gap. The ORB-3 event made concrete what had been a theoretical concern: single-operator dependence creates existential revenue risk. The facility began commercial engagement conversations with other potential operators for the Pad 0B complex and supporting infrastructure — investments in operator diversification that the pre-accident cadence had allowed to be deferred.</p>
 
     <div class="callout callout-warning">
       <div class="callout-label">Analysis Questions</div>
       <div class="analysis-questions">
         <div class="aq-item">
           <div class="aq-num">Q1</div>
-          <p>Nield has consistently identified his technical foundation as essential to his leadership effectiveness. Why is deep technical credibility specifically important in the commercial space regulatory and leadership context — and how should a leader who lacks it compensate?</p>
+          <p><strong>Crisis Communication (M6.5):</strong> As VCSFA Executive Director in the first 72 hours, you must issue a public statement and brief the Governor's office. What are the three non-negotiable elements of your public statement — and what are the two things you must not say, regardless of pressure to say them?</p>
         </div>
         <div class="aq-item">
           <div class="aq-num">Q2</div>
-          <p>The Part 450 reform shifted FAA licensing from prescriptive to performance-based standards. What does this regulatory philosophy change require from spaceport operators that the prescriptive system did not — and is this shift favorable or unfavorable for operators overall?</p>
+          <p><strong>Financial Architecture (M4):</strong> The 23-month revenue gap exposes a structural vulnerability in VCSFA's financial model. Apply the financial analysis framework from Module 4: what is the specific design flaw in a revenue model that creates this level of exposure — and what are three structural changes (not operational responses) that would reduce the exposure for the next event?</p>
         </div>
         <div class="aq-item">
           <div class="aq-num">Q3</div>
-          <p>Nield's transition from regulator to industry advocate was enabled by dual credibility with both government and commercial audiences. What behaviors and commitments during his FAA career built this dual credibility — and what would have destroyed it?</p>
+          <p><strong>Partnership Architecture (M5):</strong> The VCSFA chose to maintain a collaborative relationship with Orbital Sciences through the crisis rather than taking an adversarial posture. What is the strategic logic for this decision — and under what circumstances would an adversarial posture have been appropriate?</p>
         </div>
         <div class="aq-item">
           <div class="aq-num">Q4</div>
-          <p>The ISU–GSA partnership that produced this course is itself a form of industry capacity building — investing in the leadership capability of the next generation of spaceport executives. Applying the frameworks from this course: what is the return on investment for the Global Spaceport Alliance in making this investment, and how would you measure whether it is achieving its objectives?</p>
+          <p><strong>Synthesis (M1–M6):</strong> Looking back from October 2016, when Antares 230 successfully launches OA-5, what was the single most important leadership decision made in the 23 months after the ORB-3 accident — and why? Apply the integrated framework from all six modules to justify your answer.</p>
         </div>
       </div>
     </div>

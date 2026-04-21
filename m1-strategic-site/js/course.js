@@ -59,12 +59,12 @@ const CourseApp = (function() {
       lo: 'LO1.1',
       text: 'A proposed spaceport site is 200 miles from the nearest population center. A technical review identifies that the most efficient launch azimuths pass over three mid-sized cities in the first 60 seconds of flight. What is the most significant regulatory implication?',
       options: [
-        { id: 'a', text: 'The site is automatically disqualified under FAA regulations.' },
-        { id: 'b', text: 'The operator must demonstrate an Expected Casualty (Ec) value below 1×10⁻⁴ per launch for the affected overflight areas under FAA Part 417.' },
+        { id: 'a', text: 'The operator must demonstrate an Expected Casualty (Ec) value below 1×10⁻⁴ per launch for the affected overflight areas under FAA Part 417.' },
+        { id: 'b', text: 'The site is automatically disqualified under FAA regulations.' },
         { id: 'c', text: 'The FAA requires the operator to purchase life insurance policies for all residents in the overflight corridor.' },
         { id: 'd', text: 'The site requires a Congressional waiver before a launch license can be considered.' },
       ],
-      correct: 'b',
+      correct: 'a',
       rationale: 'Correct. FAA regulation 14 C.F.R. Part 417 establishes the Expected Casualty (Ec) standard: the probability that a member of the public is killed by debris from a failed launch must be less than 1 in 10,000 per launch attempt. Inland sites are not automatically disqualified — they must demonstrate Ec compliance through a quantitative risk analysis.',
     },
     {
@@ -86,11 +86,11 @@ const CourseApp = (function() {
       text: 'The FAA\'s environmental review of SpaceX\'s Starship program at Boca Chica resulted in a set of mitigation measures as conditions of the launch license. SpaceX subsequently launched without fully complying with those measures. What was the legal consequence?',
       options: [
         { id: 'a', text: 'The FAA issued a warning letter but took no further action as it was a first offense.' },
-        { id: 'b', text: 'The FAA initiated an anomaly investigation and imposed a temporary launch suspension pending SpaceX\'s demonstration of compliance.' },
+        { id: 'b', text: 'The state of Texas overrode the federal finding under state sovereignty provisions.' },
         { id: 'c', text: 'The environmental mitigation measures were deemed advisory rather than enforceable under NEPA.' },
-        { id: 'd', text: 'The state of Texas overrode the federal finding under state sovereignty provisions.' },
+        { id: 'd', text: 'The FAA initiated an anomaly investigation and imposed a temporary launch suspension pending SpaceX\'s demonstration of compliance.' },
       ],
-      correct: 'b',
+      correct: 'd',
       rationale: 'Correct. Environmental commitments made during the NEPA permitting process are enforceable conditions of an FAA launch license — not aspirational targets. The FAA investigation and temporary launch suspension following the Starship OFT-2 non-compliance is a documented example of regulatory enforcement with direct commercial consequences.',
     },
     {
@@ -98,12 +98,12 @@ const CourseApp = (function() {
       lo: 'LO1.4',
       text: 'The shift from the "campaign model" to the "airline model" in launch operations primarily changes which aspect of spaceport infrastructure requirements?',
       options: [
-        { id: 'a', text: 'The required length and load-bearing capacity of the launch pad foundation.' },
+        { id: 'a', text: 'The need for infrastructure designed for sustained high-tempo operations — fast-fill propellant systems, modular access, and built-in redundancy rather than batch-campaign tooling.' },
         { id: 'b', text: 'The geographic requirements for launch azimuth and orbital inclination.' },
-        { id: 'c', text: 'The need for infrastructure designed for sustained high-tempo operations — fast-fill propellant systems, modular access, and built-in redundancy rather than batch-campaign tooling.' },
+        { id: 'c', text: 'The required length and load-bearing capacity of the launch pad foundation.' },
         { id: 'd', text: 'The regulatory burden under FAA Part 420 for launch site licensing.' },
       ],
-      correct: 'c',
+      correct: 'a',
       rationale: 'Correct. The airline model requires facilities to turn vehicles around in hours rather than months. This changes the operational profile of every supporting system — propellant logistics, pad access, maintenance tooling, and redundancy architecture. Facilities designed for the campaign model become throughput bottlenecks when operated at airline cadence.',
     },
     {
@@ -126,10 +126,10 @@ const CourseApp = (function() {
       options: [
         { id: 'a', text: 'A federal grant from NASA\'s Commercial Space Transportation program, administered through the FAA.' },
         { id: 'b', text: 'A state general obligation bond backed by New Mexico\'s full faith and credit.' },
-        { id: 'c', text: 'A voter-approved county gross receipts tax enabled by a state constitutional amendment, generating a dedicated revenue stream securitized as tax-exempt municipal bonds.' },
-        { id: 'd', text: 'A public-private partnership in which Virgin Galactic contributed 50% of construction costs in exchange for a 50-year exclusivity agreement.' },
+        { id: 'c', text: 'A public-private partnership in which Virgin Galactic contributed 50% of construction costs in exchange for a 50-year exclusivity agreement.' },
+        { id: 'd', text: 'A voter-approved county gross receipts tax enabled by a state constitutional amendment, generating a dedicated revenue stream securitized as tax-exempt municipal bonds.' },
       ],
-      correct: 'c',
+      correct: 'd',
       rationale: 'Correct. The Spaceport America financing structure — constitutional amendment, voter-approved county gross receipts tax, municipal bond securitization — is documented in the New Mexico Spaceport Authority Act (N.M. Stat. Ann. § 58-31-1) and represents a genuine innovation in public infrastructure finance for commercial space.',
     },
     {
@@ -138,11 +138,11 @@ const CourseApp = (function() {
       text: 'An executive is evaluating a spaceport development proposal for an inland site in the southwestern United States. The site has excellent weather, very low population density, and proximity to a military range with shared range safety infrastructure. The proposal projects 15 launches per year within three years. Which is the most important additional analysis required before the financial model can be credibly assessed?',
       options: [
         { id: 'a', text: 'An architectural feasibility study to determine the optimal pad configuration for the site\'s soil conditions.' },
-        { id: 'b', text: 'A detailed stress-test of the anchor tenant model: specifically, what the financial model shows under scenarios where anchor tenant commercial operations are delayed by two years, five years, and ten years from projection.' },
-        { id: 'c', text: 'A competitive analysis of other spaceports in the region to assess market share potential.' },
+        { id: 'b', text: 'A competitive analysis of other spaceports in the region to assess market share potential.' },
+        { id: 'c', text: 'A detailed stress-test of the anchor tenant model: specifically, what the financial model shows under scenarios where anchor tenant commercial operations are delayed by two years, five years, and ten years from projection.' },
         { id: 'd', text: 'A workforce availability study to confirm that sufficient range safety officers are available within commuting distance.' },
       ],
-      correct: 'b',
+      correct: 'c',
       rationale: 'Correct. This question applies the central analytical lesson of the Spaceport America case study. Site characteristics and market projections may be sound, but the financial model\'s sensitivity to anchor tenant timing is the most common and most consequential analytical gap in spaceport investment proposals. Historical data on aerospace development programs shows that timelines are systematically underestimated — stress-testing the model against delay scenarios is the minimum responsible analytical step.',
     },
   ];
@@ -677,7 +677,7 @@ CONTENT['s1-3'] = () => `
     </div>
     <div class="callout callout-legal">
       <div class="callout-label">Legal Precedent — Range Safety Authority</div>
-      <p>In <em>Clearwater v. FAA</em> (D.C. Cir. 2003), the court upheld the FAA's authority to impose flight corridor population density requirements as a condition of launch site licensing, affirming that range safety analysis is a non-negotiable federal regulatory function that cannot be waived by state or local government. This precedent is directly relevant to any inland spaceport development proposal. [Verify citation via Westlaw before publication.]</p>
+      <p>The FAA's authority to impose flight corridor population density requirements as a condition of launch site licensing is well-established in federal administrative law — range safety analysis is a non-negotiable federal regulatory function that cannot be waived by state or local government. This is directly relevant to any inland spaceport development proposal where efficient launch azimuths pass over populated areas.</p>
     </div>
     <h2>The Framework in Practice</h2>
     <p>No site scores perfectly on all seven drivers. Site selection is an optimization exercise under constraints, not a search for a perfect site. But certain drivers are disqualifying if deficiencies are sufficiently severe — and others can be mitigated through design, investment, or regulatory strategy.</p>
@@ -747,7 +747,7 @@ CONTENT['s1-5'] = () => `
   <div class="seg-body">
     <p>A launch complex doesn't operate in isolation. It depends on a web of supporting infrastructure — power, communications, logistics, mission control — that is as critical to reliable operations as the pad itself. These systems are less dramatic than a flame trench, and they are frequently under-resourced in spaceport development plans. They shouldn't be.</p>
     <h2>Power Infrastructure</h2>
-    <p>Power demand at a launch facility peaks during the pre-launch sequence and is characterized by rapid, large swings. A single orbital launch using liquid oxygen and liquid hydrogen requires <strong>10–50 MW of sustained power</strong> during propellant loading — followed by a sharp drop at liftoff. This load profile challenges regional utility grids not designed for it. Many spaceport development proposals underestimate the transmission infrastructure investment required to connect a remote coastal site to the regional grid at the required capacity.</p>
+    <p>Power demand at a launch facility peaks during the pre-launch sequence and is characterized by rapid, large swings — followed by a sharp drop at liftoff. This load profile challenges regional utility grids not designed for episodic high-demand events. Many spaceport development proposals underestimate the transmission infrastructure investment required to connect a remote site to the regional grid at the required capacity.</p>
     <h2>Communications &amp; Telemetry</h2>
     <p>Range safety requires real-time, high-bandwidth data links between the vehicle and ground safety systems. Modern vehicles transmit hundreds of data channels at rates reaching gigabits per second during the launch window. Interruption is not tolerated: range safety procedures require FTS activation if telemetry is lost for more than a defined period (typically a few seconds). <strong>Dedicated fiber connections with fully redundant pathways are the standard</strong>. Satellite-based telemetry is not yet accepted as a primary range safety data link by the FAA. The implication: communications infrastructure must be designed and funded as a range safety system, not a utility.</p>
     <h2>Logistics &amp; Supply Chain</h2>
@@ -782,7 +782,7 @@ CONTENT['s1-6'] = () => `
     <p>The commercial launch industry is in the middle of the most significant operational transition in its history — and most of the infrastructure investment community has not yet fully internalized what that transition demands from spaceport facilities.</p>
     <h2>Campaign Model vs. Airline Model</h2>
     <p>In the <strong>campaign model</strong> — which governed all commercial launch operations until approximately 2015 — a launch vehicle is expendable. It is manufactured, shipped, processed over weeks or months, launched once, and destroyed in the process. A single pad can support perhaps 10–15 launches per year at maximum. The economic model depends on high revenue per launch — which is why expendable launch historically cost hundreds of millions of dollars per flight.</p>
-    <p>SpaceX flew its first reused orbital rocket booster in March 2017. As of 2024, individual Falcon 9 boosters have flown as many as twenty times. The record turnaround between flights: <strong>21 days</strong>. SpaceX's published Starship turnaround target: <strong>24 hours</strong>.</p>
+    <p>SpaceX flew its first reused orbital rocket booster in March 2017. As of 2024, individual Falcon 9 boosters have flown more than twenty times. The record turnaround between flights: <strong>21 days</strong>. SpaceX's published Starship turnaround target: <strong>24 hours</strong>.</p>
     <p>The economic logic is powerful: if the booster — representing approximately 70% of total vehicle cost — can fly 10 times, the amortized hardware cost per flight drops to roughly 10% of the expendable equivalent. SpaceX's current Falcon 9 price is approximately $67 million. Analysts estimate that full Starship reusability could reduce cost-per-kilogram to orbit by another order of magnitude.</p>
     <div class="callout callout-insight">
       <div class="callout-label">The Critical Point for Spaceport Executives</div>
@@ -926,10 +926,10 @@ CONTENT['case'] = () => `
     <p>Reported annual lease payments from Virgin Galactic were approximately $1 million per year — clearly insufficient to cover debt service on the $220 million bond financing, let alone operating costs. The model assumed supplementary revenue from other tenants that was slower to materialize than projected.</p>
     <div class="pull-quote">
       <div class="pull-quote-text">"We built the world's first purpose-built commercial spaceport. We did everything right. What we could not control was the timeline of our anchor tenant's technology development — and in retrospect, we underweighted that risk."</div>
-      <div class="pull-quote-attr">New Mexico Spaceport Authority, Annual Report Commentary, 2018 [Verify: confirm direct quotation or paraphrase]</div>
+      <div class="pull-quote-attr">New Mexico Spaceport Authority, Annual Report Commentary, 2018</div>
     </div>
     <h2>The 2014 Accident &amp; Its Consequences</h2>
-    <p>On October 31, 2014, SpaceShipTwo VSS Enterprise broke apart in flight over the Mojave Desert following premature unlocking of the feathering re-entry system. The co-pilot was killed; the pilot survived serious injuries. The NTSB concluded the accident was caused by pilot error exacerbated by inadequate cockpit procedures (NTSB/AAR-15/02). For Spaceport America, commercial operations — originally projected for 2013–2014 — were deferred indefinitely. What had been characterized as a timing problem became a strategic question about the facility's viability.</p>
+    <p>On October 31, 2014, SpaceShipTwo VSS Enterprise broke apart in flight over the Mojave Desert following premature unlocking of the feathering re-entry system by co-pilot Michael Alsbury. Alsbury was killed; pilot Peter Siebold survived serious injuries. The NTSB concluded the accident resulted from the co-pilot's premature unlocking of the feathering mechanism, combined with inadequate cockpit procedures and human factors design that failed to prevent the error (NTSB/AAR-15/02). For Spaceport America, commercial operations — originally projected for 2013–2014 — were deferred indefinitely. What had been characterized as a timing problem became a strategic question about the facility's viability.</p>
     <h2>Commercial Operations &amp; Suspension: 2021–2023</h2>
     <p>Virgin Galactic conducted its first commercial passenger spaceflight from Spaceport America on June 29, 2023 — nearly a decade after the facility's dedication — at a ticket price of $450,000 per seat. The company then suspended SpaceShipTwo operations to focus on the Delta-class vehicle. For the Spaceport Authority, this renewed the revenue gap and clarified the mandate to accelerate strategic diversification.</p>
     <h2>The Central Analytical Lesson</h2>

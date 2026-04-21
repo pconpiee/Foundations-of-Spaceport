@@ -44,11 +44,11 @@ const CourseApp = (function() {
       text: 'Under the 1967 Outer Space Treaty, which state bears international responsibility for a national commercial launch operator\'s activities in outer space?',
       options: [
         { id: 'a', text: 'The state where the launch vehicle was manufactured.' },
-        { id: 'b', text: 'The launching state — the state from whose territory the launch takes place, or whose nationals conduct the launch.' },
+        { id: 'b', text: 'The United Nations Office for Outer Space Affairs (UNOOSA) as custodian of the Treaty.' },
         { id: 'c', text: 'No state bears responsibility for commercial activities; the operator assumes full international liability independently.' },
-        { id: 'd', text: 'The United Nations Office for Outer Space Affairs (UNOOSA) as custodian of the Treaty.' },
+        { id: 'd', text: 'The launching state — the state from whose territory the launch takes place, or whose nationals conduct the launch.' },
       ],
-      correct: 'b',
+      correct: 'd',
       rationale: 'Correct. Article VI of the Outer Space Treaty establishes that states bear international responsibility for national activities in outer space, including those conducted by non-governmental entities. This is why every state with commercial launch activity requires national authorization and continuing supervision of its operators — the state\'s international responsibility cannot be delegated away. The "launching state" concept (developed further in the Liability Convention) includes states from whose territory a launch occurs, states that procure a launch, and states whose nationals conduct a launch.',
     },
     {
@@ -56,12 +56,12 @@ const CourseApp = (function() {
       lo: 'LO3.2',
       text: 'The FAA\'s Office of Commercial Space Transportation (AST) was created to fulfill two objectives that are explicitly written into the Commercial Space Launch Act. Which pair correctly describes them?',
       options: [
-        { id: 'a', text: 'Maximizing U.S. commercial launch market share, and ensuring NASA has access to commercial launch services.' },
-        { id: 'b', text: 'Protecting public safety and the safety of property, while encouraging and facilitating the commercial space industry.' },
+        { id: 'a', text: 'Protecting public safety and the safety of property, while encouraging and facilitating the commercial space industry.' },
+        { id: 'b', text: 'Maximizing U.S. commercial launch market share, and ensuring NASA has access to commercial launch services.' },
         { id: 'c', text: 'Ensuring national security launch access and regulating launch site environmental compliance.' },
         { id: 'd', text: 'Licensing orbital launch operators and certifying suborbital vehicle manufacturers.' },
       ],
-      correct: 'b',
+      correct: 'a',
       rationale: 'Correct. The Commercial Space Launch Act (51 U.S.C. § 50901 et seq.) establishes a dual mandate for FAA/AST: protect the safety of the public and property, and encourage, facilitate, and promote commercial space transportation. This dual mandate creates a structural tension that runs through every regulatory decision FAA/AST makes. Safety requirements that are too burdensome impede the commercial industry; requirements that are too permissive expose the public to risk. The balance between these two objectives is the ongoing project of commercial space regulation.',
     },
     {
@@ -70,11 +70,11 @@ const CourseApp = (function() {
       text: 'A new launch operator has submitted a launch license application to FAA/AST under 14 CFR Part 450 (the streamlined performance-based rule). The FAA has 180 days to issue or deny the license. Under what condition may the FAA clock be paused?',
       options: [
         { id: 'a', text: 'The FAA clock cannot be paused once an application is accepted as complete.' },
-        { id: 'b', text: 'The clock is paused whenever the FAA requests additional information from the applicant and is waiting for a response.' },
-        { id: 'c', text: 'The clock is paused when a competing launch operator files a formal objection to the application.' },
+        { id: 'b', text: 'The clock is paused when a competing launch operator files a formal objection to the application.' },
+        { id: 'c', text: 'The clock is paused whenever the FAA requests additional information from the applicant and is waiting for a response.' },
         { id: 'd', text: 'The clock is automatically paused 90 days into review to allow for public comment.' },
       ],
-      correct: 'b',
+      correct: 'c',
       rationale: 'Correct. The 180-day statutory clock (established in the Commercial Space Launch Act) is paused — or "tolled" — during periods when the FAA is waiting for the applicant to provide additional information in response to an FAA data request. This means the effective review period can be significantly longer than 180 days if the applicant\'s application is incomplete or requires iterative clarification. The practical implication: well-prepared, complete applications result in faster licensing than applications that require multiple rounds of FAA information requests.',
     },
     {
@@ -87,8 +87,8 @@ const CourseApp = (function() {
         { id: 'c', text: '1 × 10⁻⁶ (1 in 1,000,000) per launch.' },
         { id: 'd', text: '1 × 10⁻³ (1 in 1,000) per launch.' },
       ],
-      correct: 'c',
-      rationale: 'Correct. The FAA\'s public safety standard — the expected casualty (Ec) criterion — requires that the probability of a single casualty to an uninvolved member of the public does not exceed 1 × 10⁻⁶ per launch attempt. This "one in a million" threshold has been the foundational public safety standard for U.S. commercial launches since the 1990s. Part 450 preserves this threshold as a performance standard while allowing more flexibility in how operators demonstrate compliance.',
+      correct: 'a',
+      rationale: 'Correct. The FAA\'s public safety standard — the expected casualty (Ec) criterion under 14 CFR Part 417.107(b) and Part 450.101(a)(1) — requires that the probability of a casualty to an uninvolved member of the public does not exceed 1 × 10⁻⁴ (1 in 10,000) per launch attempt. This threshold has been the foundational public safety standard for U.S. commercial launches since the 1990s. The 1 × 10⁻⁶ figure appears in some individual risk contexts (e.g., nuclear and chemical hazard assessments) but is not the FAA Ec criterion. Part 450 preserves the 1 × 10⁻⁴ threshold as a performance standard while allowing operators flexibility in demonstrating compliance methodology.',
     },
     {
       id: 'q5',
@@ -96,11 +96,11 @@ const CourseApp = (function() {
       text: 'Under the 1972 Liability Convention, absolute liability applies when damage is caused on the surface of the Earth or to aircraft in flight. What standard of liability applies for damage caused in outer space?',
       options: [
         { id: 'a', text: 'Strict liability also applies in outer space — the launching state is liable regardless of fault.' },
-        { id: 'b', text: 'No liability applies in outer space — the Convention only covers damage to Earth and Earth\'s atmosphere.' },
-        { id: 'c', text: 'Fault-based liability applies in outer space — the claimant state must prove the launching state or its nationals were at fault.' },
+        { id: 'b', text: 'Fault-based liability applies in outer space — the claimant state must prove the launching state or its nationals were at fault.' },
+        { id: 'c', text: 'No liability applies in outer space — the Convention only covers damage to Earth and Earth\'s atmosphere.' },
         { id: 'd', text: 'Mutual waiver of liability applies automatically in outer space between treaty parties.' },
       ],
-      correct: 'c',
+      correct: 'b',
       rationale: 'Correct. The Liability Convention establishes a two-tier liability regime: absolute (strict) liability for damage caused on the Earth\'s surface or to aircraft in flight (Article II), and fault-based liability for damage caused in outer space (Article III). This distinction matters practically because fault-based liability requires the claimant state to prove the launching state\'s negligence or wrongful act — a much harder standard to meet. The 1978 Cosmos 954 incident (Soviet satellite reentry over Canada) was resolved under the absolute liability standard, as it involved damage to Earth\'s surface.',
     },
     {
@@ -109,12 +109,12 @@ const CourseApp = (function() {
       text: 'FAA Part 450 (2021) replaced FAA Parts 415 and 431 with a "performance-based" regulatory framework. What is the most significant operational difference between the legacy prescriptive approach and the Part 450 performance-based approach?',
       options: [
         { id: 'a', text: 'Part 450 requires shorter review timelines — 90 days instead of 180.' },
-        { id: 'b', text: 'Part 450 allows operators to use any method to demonstrate safety compliance, as long as the public safety outcomes are met — rather than prescribing specific technical methods.' },
-        { id: 'c', text: 'Part 450 eliminates the need for a flight safety analysis for reusable launch vehicles.' },
+        { id: 'b', text: 'Part 450 eliminates the need for a flight safety analysis for reusable launch vehicles.' },
+        { id: 'c', text: 'Part 450 allows operators to use any method to demonstrate safety compliance, as long as the public safety outcomes are met — rather than prescribing specific technical methods.' },
         { id: 'd', text: 'Part 450 transfers range safety authority from the FAA to the launch operator.' },
       ],
-      correct: 'b',
-      rationale: 'Correct. The fundamental shift in Part 450 is from prescriptive compliance — where the regulation specified the exact methods operators must use to demonstrate safety — to performance-based compliance, where operators must demonstrate that their approach achieves the required safety outcomes (e.g., Ec ≤ 1 × 10⁻⁶) using whatever technically valid methods they choose. This is intended to accommodate new vehicle types and operations that the prescriptive rules were not designed for, including reusable vehicles, air-launched systems, and novel mission profiles. The tradeoff is increased analytical complexity — operators must do more work to define and justify their compliance methodology.',
+      correct: 'c',
+      rationale: 'Correct. The fundamental shift in Part 450 is from prescriptive compliance — where the regulation specified the exact methods operators must use to demonstrate safety — to performance-based compliance, where operators must demonstrate that their approach achieves the required safety outcomes (e.g., Ec ≤ 1 × 10⁻⁴) using whatever technically valid methods they choose. This is intended to accommodate new vehicle types and operations that the prescriptive rules were not designed for, including reusable vehicles, air-launched systems, and novel mission profiles. The tradeoff is increased analytical complexity — operators must do more work to define and justify their compliance methodology.',
     },
     {
       id: 'q7',
@@ -122,11 +122,11 @@ const CourseApp = (function() {
       text: 'A foreign launch operator wants to provide commercial launch services to U.S. government customers, using vehicles launched from a non-U.S. launch site. Which U.S. regulatory requirement must be satisfied before U.S. Government launch procurement can proceed?',
       options: [
         { id: 'a', text: 'The operator must obtain an FAA launch license, even for foreign launches, under the extraterritorial provisions of the Commercial Space Launch Act.' },
-        { id: 'b', text: 'The launch must be authorized by a reciprocal launch authorization agreement between the FAA and the foreign state\'s launch authority.' },
+        { id: 'b', text: 'No U.S. regulatory requirement applies to foreign launches from foreign soil, even for U.S. government payloads.' },
         { id: 'c', text: 'The U.S. Government must obtain a launch license on behalf of the foreign operator under a government-to-government launch agreement.' },
-        { id: 'd', text: 'No U.S. regulatory requirement applies to foreign launches from foreign soil, even for U.S. government payloads.' },
+        { id: 'd', text: 'The launch must be authorized by a reciprocal launch authorization agreement between the FAA and the foreign state\'s launch authority.' },
       ],
-      correct: 'b',
+      correct: 'd',
       rationale: 'Correct. The FAA administers a system of bilateral launch authorization agreements (sometimes called "Launch Trade Agreements") with foreign launch authorities that allow foreign operators to provide launch services to U.S. customers — including U.S. government customers — from foreign launch sites. These agreements ensure that the foreign government has established regulatory oversight equivalent to U.S. standards, protecting U.S. interests and public safety. Without such an agreement, U.S. government procurement from a foreign launch operator is legally constrained.',
     },
     {
@@ -135,11 +135,11 @@ const CourseApp = (function() {
       text: 'A commercial launch site operator in the United States is required to hold a Launch Site Operator License (LSOL) under 14 CFR Part 420. Which of the following is the most significant ongoing obligation of a LSOL holder, beyond the initial site licensing?',
       options: [
         { id: 'a', text: 'Annual financial audits submitted to FAA demonstrating that the operator can cover maximum probable liability.' },
-        { id: 'b', text: 'Quarterly safety reports to FAA identifying any changes to site infrastructure or operations.' },
-        { id: 'c', text: 'Continuing obligation to ensure that any launch operator using the licensed site complies with its own launch license and that site operations remain within the licensed parameters.' },
+        { id: 'b', text: 'Continuing obligation to ensure that any launch operator using the licensed site complies with its own launch license and that site operations remain within the licensed parameters.' },
+        { id: 'c', text: 'Quarterly safety reports to FAA identifying any changes to site infrastructure or operations.' },
         { id: 'd', text: 'Mandatory FAA on-site inspection prior to each commercial launch conducted at the licensed site.' },
       ],
-      correct: 'c',
+      correct: 'b',
       rationale: 'Correct. The Launch Site Operator License creates a continuing obligation — not just a one-time certification. The LSOL holder is responsible for ensuring that launch operators using its site operate within the parameters established in the launch site license, and that the site itself remains in compliance with its licensed configuration. If the site makes significant changes — adds a new pad, expands its propellant storage capacity, or modifies range safety systems — those changes must be reviewed and approved by FAA. This ongoing compliance obligation is one of the reasons launch site operators must maintain a dedicated regulatory compliance function.',
     },
   ];
@@ -564,7 +564,7 @@ CONTENT['s3-2'] = () => `
       <div class="axis-card">
         <span class="axis-num">MANDATE 01</span>
         <div class="axis-title">Protect Safety</div>
-        <div class="axis-body">AST must protect the safety of the public and the safety of property. This is the foundational purpose of all FAA regulation — applied to a domain where the consequences of failure are measured in public casualty risk, not just financial loss. The public safety standard — the expected casualty (Ec) criterion of 1 × 10⁻⁶ per launch — is the quantitative expression of this mandate. Every launch license requires a demonstration that the operation meets this standard.</div>
+        <div class="axis-body">AST must protect the safety of the public and the safety of property. This is the foundational purpose of all FAA regulation — applied to a domain where the consequences of failure are measured in public casualty risk, not just financial loss. The public safety standard — the expected casualty (Ec) criterion of 1 × 10⁻⁴ per launch (1 in 10,000) — is the quantitative expression of this mandate. Every launch license requires a demonstration that the operation meets this standard.</div>
       </div>
       <div class="axis-card">
         <span class="axis-num">MANDATE 02</span>
@@ -598,6 +598,7 @@ CONTENT['s3-2'] = () => `
     <p>One of the most commercially significant features of the U.S. regulatory framework is its liability indemnification structure, established under 51 U.S.C. § 50914–50915.</p>
     <p>The structure works as follows: Launch operators must carry insurance for the maximum probable loss (MPL) to third parties, as calculated and required by the FAA. If a launch accident causes damage to third parties in excess of the required insurance, the U.S. government indemnifies the operator up to $1.5 billion (2011 dollars, indexed), subject to Congressional appropriation. Damage above the government indemnification cap is the operator's unindemnified risk.</p>
     <p>This structure — mandatory insurance up to MPL, government backstop above MPL — was designed to make commercial launch economically viable in an era when the tail risks of a launch accident were potentially unlimited. It reflects a deliberate government policy choice to accept the risk of very-large catastrophic accidents as a cost of developing the commercial launch industry, rather than requiring operators to carry unlimited insurance (which would have been unavailable or prohibitively expensive).</p>
+    <p>A critical operational caveat: the government indemnification backstop is <em>subject to Congressional appropriation</em>. It is not a guaranteed payment — it is a statutory authorization for payment, which Congress must fund after the fact. In practice, for a catastrophic accident that triggers the backstop, Congressional appropriation is likely — but it is not automatic, and the timing of any payment is uncertain. Operators and spaceport executives who treat the government backstop as equivalent to a funded escrow are misreading the statute. The commercial and contractual significance of this distinction should be explicit in risk analysis and in disclosure to investors.</p>
     <div class="callout callout-warning">
       <div class="callout-label">The Cross-Waiver of Liability</div>
       <p>Commercial launch agreements in the U.S. operate under a mandatory cross-waiver of liability framework (51 U.S.C. § 50914). Launch operators, launch site operators, customers, and their contractors are required to waive claims against each other for damage arising from licensed activities, regardless of fault. The cross-waiver exists to prevent the web of claims between parties to a complex launch program from becoming commercially unworkable. It is a feature of U.S. commercial space law that has no direct equivalent in most other legal systems — a significant factor in the competitiveness of U.S. launch services in international markets.</p>
@@ -657,7 +658,7 @@ CONTENT['s3-3'] = () => `
     <div class="phase-block">
       <div class="phase-header"><span class="phase-num">DOMAIN 03</span><div class="phase-title">Safety Review</div></div>
       <div class="phase-body">
-        <p>The core of the licensing process. The safety review evaluates whether the proposed launch meets the public safety standard: Ec ≤ 1 × 10⁻⁶. This requires a flight safety analysis demonstrating the probability of debris impacting a populated area, propellant explosion, or other hazardous event — for all credible failure modes, across the entire trajectory. Under Part 450, operators have flexibility in the methodology used to conduct this analysis; they must justify their methodology as technically valid and demonstrate the required outcome.</p>
+        <p>The core of the licensing process. The safety review evaluates whether the proposed launch meets the public safety standard: Ec ≤ 1 × 10⁻⁴. This requires a flight safety analysis demonstrating the probability of debris impacting a populated area, propellant explosion, or other hazardous event — for all credible failure modes, across the entire trajectory. Under Part 450, operators have flexibility in the methodology used to conduct this analysis; they must justify their methodology as technically valid and demonstrate the required outcome.</p>
         <p>The safety review also covers: flight termination system design and performance, propellant explosive hazard analysis, ground safety analysis (including the pad, the facility, and the surrounding area), and tracking system performance requirements.</p>
       </div>
     </div>
@@ -843,7 +844,7 @@ CONTENT['s3-6'] = () => `
 
     <h2>Space Tourism — The Participant vs. Passenger Problem</h2>
     <p>The Commercial Space Launch Act distinguishes between "crew" (trained commercial spaceflight participants and professional crew with operational responsibilities) and "space flight participants" (paying passengers who are along for the ride). Space flight participants must be informed of risks and provide consent — but they are not regulated with the same safety framework as aircraft passengers. This reflects the deliberate policy choice to allow space tourism to develop under an "informed consent" regime rather than a prescriptive safety standard, on the theory that space tourism is inherently experimental and that prescriptive standards would foreclose innovation.</p>
-    <p>This policy choice is being re-examined. The Virgin Galactic VSS Unity fatal accident in 2014, the Blue Origin NS near-miss incidents, and the growing maturity of the suborbital tourism market have renewed debate about whether the "informed consent plus crew training" model is adequate public safety protection. FAA AST's authority to set prescriptive crew safety standards is currently limited by statute — a limitation that Congress has periodically extended and that is a recurring subject of regulatory discussion.</p>
+    <p>This policy choice is being re-examined. The Virgin Galactic VSS Enterprise fatal accident in October 2014 — in which co-pilot Michael Alsbury was killed when the feathering system was prematurely deployed during a test flight over the Mojave Desert — and the September 2022 Blue Origin NS-23 engine anomaly (which triggered the vehicle's in-flight escape system on an unmanned test flight) have renewed debate about whether the "informed consent plus crew training" model is adequate public safety protection. FAA AST's authority to set prescriptive crew safety standards is currently limited by statute — a limitation that Congress has periodically extended and that is a recurring subject of regulatory discussion.</p>
     <div class="callout callout-insight">
       <div class="callout-label">The Regulatory Pace Problem</div>
       <p>The fundamental challenge for space regulation is time. Regulatory rulemaking in the U.S. — with its notice-and-comment requirements, interagency coordination, and Congressional oversight — operates on a 3–7 year cycle for significant rules. The commercial space industry, at its current pace, can undergo multiple technology generations in that same period. The result is a regulatory framework that is perpetually catching up. Part 450 was designed to address this — its performance-based structure is intended to remain valid even as technology changes, because it regulates outcomes rather than methods. Whether Part 450's flexibility is sufficient to keep up with the pace of innovation is the central regulatory question for the next decade.</p>
@@ -938,7 +939,7 @@ CONTENT['case'] = () => `
     <p>The result was that innovative operators spent enormous resources demonstrating compliance with prescriptive rules that didn't fit their vehicles, seeking equivalency determinations and special conditions that had to be negotiated case-by-case. The regulatory cost of innovation was high — and the FAA's review workload was growing faster than its staffing.</p>
 
     <h2>Part II — The Regulatory Development Process (2015–2019)</h2>
-    <p>FAA/AST initiated the rulemaking for what would become Part 450 in 2015. The development process was notably collaborative: over four years, AST engaged in extensive consultation with the commercial industry through public workshops, industry working groups, and formal notice-and-comment periods. The core regulatory design choice was to move from prescribing how operators must demonstrate safety (specific methods for trajectory analysis, specific FTS requirements) to prescribing what safety outcome operators must achieve (Ec ≤ 1 × 10⁻⁶, with operator flexibility to demonstrate compliance by any technically valid method).</p>
+    <p>FAA/AST initiated the rulemaking for what would become Part 450 in 2015. The development process was notably collaborative: over four years, AST engaged in extensive consultation with the commercial industry through public workshops, industry working groups, and formal notice-and-comment periods. The core regulatory design choice was to move from prescribing how operators must demonstrate safety (specific methods for trajectory analysis, specific FTS requirements) to prescribing what safety outcome operators must achieve (Ec ≤ 1 × 10⁻⁴, with operator flexibility to demonstrate compliance by any technically valid method).</p>
     <p>This shift is the difference between prescriptive and performance-based regulation. The analogy: a prescriptive building code says "you must use 2x4 studs on 16-inch centers." A performance-based code says "the wall must support 40 lbs/sq ft load." The structural engineer can meet the performance standard using any validated structural approach — 2x4 studs, 2x6 studs, engineered lumber, steel studs. The prescriptive code locks in a 1960s construction method; the performance code allows innovation while maintaining the safety standard.</p>
     <p>The final rule — the Launch and Reentry Licensing Requirements rule, creating 14 CFR Part 450 — was published in December 2020 and became effective in March 2021. It was the first comprehensive revision of the commercial launch licensing rules since the early 2000s.</p>
 
@@ -973,7 +974,7 @@ CONTENT['case'] = () => `
         </div>
         <div class="aq-item">
           <div class="aq-num">Q4</div>
-          <p>You are the head of regulatory affairs for a commercial launch operator. Your legal team tells you that your new vehicle can achieve Ec ≤ 1 × 10⁻⁶ using an analytical method the FAA has never seen before. Your business case requires the license within 120 days. What is your regulatory strategy?</p>
+          <p>You are the head of regulatory affairs for a commercial launch operator. Your legal team tells you that your new vehicle can achieve Ec ≤ 1 × 10⁻⁴ using an analytical method the FAA has never seen before. Your business case requires the license within 120 days. What is your regulatory strategy?</p>
         </div>
       </div>
     </div>

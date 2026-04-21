@@ -43,11 +43,11 @@ const CourseApp = (function() {
       text: 'A commercial spaceport\'s operations depend on multiple parties whose authority and interests overlap. Which of the following best describes the primary governance challenge this creates?',
       options: [
         { id: 'a', text: 'Difficulty obtaining a single FAA launch license that covers all parties.' },
-        { id: 'b', text: 'No single party has authority over all the variables that determine operational success — requiring coordination mechanisms that substitute for unified command.' },
-        { id: 'c', text: 'Conflicting state and federal regulatory requirements that cannot both be satisfied simultaneously.' },
+        { id: 'b', text: 'Conflicting state and federal regulatory requirements that cannot both be satisfied simultaneously.' },
+        { id: 'c', text: 'No single party has authority over all the variables that determine operational success — requiring coordination mechanisms that substitute for unified command.' },
         { id: 'd', text: 'The launch operator and the spaceport operator have incompatible safety cultures.' },
       ],
-      correct: 'b',
+      correct: 'c',
       rationale: 'Correct. The fundamental governance challenge in multi-party spaceport operations is the absence of unified command. The spaceport operator controls the facility but not the launch vehicle. The launch operator controls the vehicle but not the range. The FAA controls licensing but does not conduct operations. DoD range safety controls the range safety function but not commercial operations decisions. Each party has authority over a portion of the operational envelope, and success requires all parties to perform well simultaneously. No single party can unilaterally ensure a successful outcome — coordination mechanisms (contractual interfaces, safety review committees, integrated operations plans) substitute for the unified command authority that does not exist.',
     },
     {
@@ -55,12 +55,12 @@ const CourseApp = (function() {
       lo: 'LO5.2',
       text: 'A commercial spaceport operator is negotiating a cooperative agreement with the U.S. Air Force to access range safety infrastructure at a nearby DoD range. The Air Force offers favorable terms but requires the commercial operator to accept Department of Defense operational priorities — meaning commercial launches can be preempted by DoD requirements with 72-hour notice. What is the primary strategic consideration for the commercial operator?',
       options: [
-        { id: 'a', text: 'Whether the FAA\'s launch license terms are compatible with DoD preemption authority.' },
-        { id: 'b', text: 'Whether 72-hour preemption notice is contractually compliant with the operator\'s Launch Services Agreements with customers, and whether the operational risk of preemption is acceptable relative to the cost benefit of accessing DoD range infrastructure.' },
+        { id: 'a', text: 'Whether 72-hour preemption notice is contractually compliant with the operator\'s Launch Services Agreements with customers, and whether the operational risk of preemption is acceptable relative to the cost benefit of accessing DoD range infrastructure.' },
+        { id: 'b', text: 'Whether the FAA\'s launch license terms are compatible with DoD preemption authority.' },
         { id: 'c', text: 'Whether DoD operational priorities will compromise the facility\'s commercial brand.' },
         { id: 'd', text: 'Whether DoD partnership will disqualify the operator from non-governmental commercial customers.' },
       ],
-      correct: 'b',
+      correct: 'a',
       rationale: 'Correct. The primary strategic consideration is operational reliability as experienced by the operator\'s commercial customers. Most commercial launch customers — satellite operators, commercial payload owners — have their own contractual and programmatic obligations that depend on launch schedule predictability. If the spaceport\'s launch window can be preempted by DoD priorities with 72 hours notice, the operator must either: (a) accept this risk and disclose it contractually to customers, (b) renegotiate customer Launch Services Agreements to include force majeure provisions covering DoD preemption, or (c) seek a DoD agreement with longer notice periods or commercial priority windows. The cost-benefit calculation is real — DoD range infrastructure access can be highly valuable — but the operational risk must be fully characterized.',
     },
     {
@@ -82,11 +82,11 @@ const CourseApp = (function() {
       text: 'A commercial spaceport development in a coastal state faces organized opposition from an environmental advocacy group and a commercial fishing association over the EIS process. The opposition is not legally blocking the project — EIS requirements are being met — but is generating significant negative media coverage and local political attention. What is the most effective management strategy?',
       options: [
         { id: 'a', text: 'Maintain regulatory compliance and do not engage with the opposition, since the legal process does not require their consent.' },
-        { id: 'b', text: 'Engage the opposition directly through a structured stakeholder process: understand their specific concerns, identify shared interests, and develop operational commitments (launch schedule coordination, monitoring programs, impact mitigation measures) that address their primary concerns without compromising commercial operations.' },
+        { id: 'b', text: 'Request that state government pressure the opposition to withdraw their objections in exchange for economic development commitments in their communities.' },
         { id: 'c', text: 'Commission competing scientific studies to rebut the environmental advocates\' claims in the public record.' },
-        { id: 'd', text: 'Request that state government pressure the opposition to withdraw their objections in exchange for economic development commitments in their communities.' },
+        { id: 'd', text: 'Engage the opposition directly through a structured stakeholder process: understand their specific concerns, identify shared interests, and develop operational commitments (launch schedule coordination, monitoring programs, impact mitigation measures) that address their primary concerns without compromising commercial operations.' },
       ],
-      correct: 'b',
+      correct: 'd',
       rationale: 'Correct. Regulatory compliance satisfies the legal minimum, but it does not resolve community opposition — and unresolved community opposition creates persistent risks: legislative action, litigation by advocacy groups challenging EIS adequacy, local media coverage affecting political support for state facility investment, and the operational friction of a community relationship characterized by adversarial dynamics rather than mutual benefit. The most effective strategy is direct, structured engagement: convening the stakeholders, conducting facilitated listening sessions to understand specific concerns (acoustic impacts? Marine debris protocols? Overflight coordination?), and developing operational commitments that demonstrate genuine response. Fishing associations, in particular, have legitimate operational concerns about launch windows and safety exclusion zones that can often be addressed through scheduling coordination rather than through conflict.',
     },
     {
@@ -95,11 +95,11 @@ const CourseApp = (function() {
       text: 'A U.S.-licensed commercial launch operator wants to launch satellites for a foreign government customer from a U.S. commercial spaceport. The satellite payload includes components manufactured in a country with which the U.S. has no Technology Safeguards Agreement. What is the primary legal framework that governs this transaction?',
       options: [
         { id: 'a', text: 'The FAA\'s launch license, which covers all aspects of the commercial launch activity.' },
-        { id: 'b', text: 'The International Traffic in Arms Regulations (ITAR) and Export Administration Regulations (EAR), which control the export of defense-related technology and govern what foreign-manufactured components can be integrated at a U.S. licensed facility.' },
-        { id: 'c', text: 'The Outer Space Treaty, which governs all space activities of States Parties regardless of whether the activity is governmental or commercial.' },
+        { id: 'b', text: 'The Outer Space Treaty, which governs all space activities of States Parties regardless of whether the activity is governmental or commercial.' },
+        { id: 'c', text: 'The International Traffic in Arms Regulations (ITAR) and Export Administration Regulations (EAR), which control the export of defense-related technology and govern what foreign-manufactured components can be integrated at a U.S. licensed facility.' },
         { id: 'd', text: 'The bilateral trade agreement between the U.S. and the country where the satellite was manufactured.' },
       ],
-      correct: 'b',
+      correct: 'c',
       rationale: 'Correct. ITAR and EAR are the controlling legal frameworks for foreign payload components at U.S. launch facilities. The FAA launch license does not authorize the export-controlled technology aspects of the transaction — it licenses the launch activity. ITAR (administered by the State Department) controls munitions and defense-related technology; EAR (administered by Commerce) controls dual-use technology. Satellite components — particularly propulsion systems, guidance electronics, and encryption hardware — frequently fall under ITAR. Without a Technology Safeguards Agreement (TSA) with the manufacturing country, specific export licenses or technology transfer authorizations may be required, or certain component integration activities may need to occur outside the U.S. An operator proceeding with a foreign payload launch without understanding the ITAR/EAR implications faces significant legal exposure.',
     },
     {
@@ -107,26 +107,26 @@ const CourseApp = (function() {
       lo: 'LO5.6',
       text: 'A spaceport\'s Launch Services Agreement includes a force majeure clause that excuses performance for "acts of God, war, government actions, and other causes beyond the reasonable control of the party." A launch operator claims force majeure protection for a launch delay caused by a failure of their own launch vehicle during a static fire test. Is this a valid force majeure claim?',
       options: [
-        { id: 'a', text: 'Yes — a launch vehicle failure is beyond the operator\'s control because it is a complex technical system failure.' },
-        { id: 'b', text: 'No — a launch vehicle failure in a static fire test is within the operator\'s operational control and is a foreseeable risk of the launch business, not an external cause beyond reasonable control.' },
+        { id: 'a', text: 'No — a launch vehicle failure in a static fire test is within the operator\'s operational control and is a foreseeable risk of the launch business, not an external cause beyond reasonable control.' },
+        { id: 'b', text: 'Yes — a launch vehicle failure is beyond the operator\'s control because it is a complex technical system failure.' },
         { id: 'c', text: 'It depends on whether the vehicle was manufactured in-house or procured from a third party.' },
         { id: 'd', text: 'Yes — if the failure was caused by a manufacturing defect in a component sourced from a third party supplier.' },
       ],
-      correct: 'b',
+      correct: 'a',
       rationale: 'Correct. Force majeure clauses protect parties from external events beyond their reasonable control — weather, natural disasters, government-imposed launch holds, and similar circumstances that neither party can anticipate or control. A launch vehicle failure is a foreseeable risk of the launch business — the operator knows that test failures are possible, builds test margins into their development schedule, and carries insurance to cover this risk. It is within the operator\'s operational responsibility sphere. Well-drafted spaceport LSAs explicitly distinguish force majeure (external cause, beyond control) from operator performance failures (internal cause, within control) and provide different remedies for each: force majeure typically results in delayed performance without penalty; operator performance failures result in delay damages, cure periods, and ultimately termination rights.',
     },
     {
       id: 'q7',
       lo: 'LO5.7',
-      text: 'Research on partnership failures in complex infrastructure projects identifies communication breakdown as a leading cause of failure. In spaceport operations, which specific communication failure pattern is most commonly associated with serious safety or operational incidents?',
+      text: 'During a monthly operations review, your Launch Site Safety Manager mentions that the propellant transfer team has been skipping the post-fill pressure verification step for the past six campaigns because the system "always reads nominal" and the step adds 45 minutes to the pad cycle. No anomalies have occurred. What is the correct response — and why is it urgent?',
       options: [
-        { id: 'a', text: 'Failure to communicate launch delays to customers in a timely manner.' },
-        { id: 'b', text: 'Normalization of deviance — the gradual acceptance of anomalies and deviations from procedure as normal, without escalation, because previous deviations did not result in adverse outcomes.' },
-        { id: 'c', text: 'Failure to share financial performance data between facility management and government funders.' },
-        { id: 'd', text: 'Inadequate communication between the spaceport operator and the FAA during licensing renewals.' },
+        { id: 'a', text: 'Accept the informal change and document it as a temporary operational variance pending formal procedure review.' },
+        { id: 'b', text: 'Restore the certified procedure immediately, treat this as a safety culture finding requiring root cause analysis, and conduct an audit of other procedures for similar undocumented deviations.' },
+        { id: 'c', text: 'Schedule a formal procedure review to evaluate whether the step can be permanently removed given the consistent nominal readings.' },
+        { id: 'd', text: 'Normalization of deviance — the gradual acceptance of anomalies and deviations from procedure as normal, without escalation, because previous deviations did not result in adverse outcomes.' },
       ],
-      correct: 'b',
-      rationale: 'Correct. Normalization of deviance — first described by sociologist Diane Vaughan in her analysis of the Space Shuttle Challenger disaster — is the specific communication failure pattern most associated with serious safety incidents in complex technical operations. It describes the process by which deviations from established safety standards become gradually accepted as normal because they have not yet produced adverse outcomes. Each accepted deviation slightly shifts the threshold for what is considered normal, until the organization is operating well outside its safety design envelope without recognizing it. In spaceport operations, normalization of deviance can occur in any of the multi-party interfaces: between the RSO and the launch operator, between the ground crew and operations management, between the facility operator and the regulator. The antidote is structured anomaly reporting, mandatory deviation review, and a safety culture that treats escalation as a professional norm rather than a bureaucratic burden.',
+      correct: 'd',
+      rationale: 'Correct. This scenario is a textbook normalization of deviance event. Six consecutive campaigns without a deviation have created an informal consensus that the procedure step is unnecessary — but the certified procedure exists because a failure of that step could be catastrophic, not because it is expected to fail frequently. The absence of past adverse outcomes is not evidence that the step is unnecessary; it is evidence that the failure mode it guards against is low-probability but not zero. The urgency is organizational: the moment a safety step is informally skipped becomes the moment the safety culture begins to accept that certified procedures are optional when they are inconvenient. The correct response is to restore the procedure immediately, not review whether it should be removed — that review is a separate process that requires engineering justification, not operational convenience as its basis.',
     },
     {
       id: 'q8',
@@ -574,7 +574,7 @@ CONTENT['s5-5'] = () => `
     <p>Beyond bilateral launch services, a growing dimension of international partnership is spaceport-to-spaceport collaboration: joint marketing, operator referrals, technical expertise sharing, and coordinated advocacy in multilateral forums. The Global Spaceport Alliance was established in part to facilitate this type of collaboration — providing a common platform for spaceport operators globally to coordinate on issues of shared interest including regulatory standards, safety best practices, environmental compliance, and workforce development.</p>
     <div class="callout callout-insight">
       <div class="callout-label">The UK Model — Licensed Commercial Spaceports</div>
-      <p>The United Kingdom's development of licensed commercial spaceports — Spaceport Cornwall, SaxaVord in Shetland, Sutherland in Scotland, and others — represents the most significant international spaceport development program outside the United States. The UK Civil Aviation Authority regulates these facilities under the Space Industry Act 2018. The UK facilities are developing commercial relationships with U.S. launch operators (Virgin Orbit launched from Cornwall in January 2023, before the company's closure) and are subject to UK-US Technology Safeguards Agreement provisions that govern the technical collaboration. The UK spaceport program provides a real-time case study in the regulatory, commercial, and partnership challenges of building a national commercial spaceport capability from the ground up.</p>
+      <p>The United Kingdom's development of licensed commercial spaceports — Spaceport Cornwall, SaxaVord in Shetland, Sutherland in Scotland, and others — represents the most significant international spaceport development program outside the United States. The UK Civil Aviation Authority regulates these facilities under the Space Industry Act 2018. The UK facilities are developing commercial relationships with U.S. launch operators (Virgin Orbit attempted the UK's first orbital launch from Cornwall in January 2023 — the mission failed to achieve orbit due to a second-stage fuel filter anomaly — before the company's subsequent closure) and are subject to UK-US Technology Safeguards Agreement provisions that govern the technical collaboration. The UK spaceport program provides a real-time case study in the regulatory, commercial, and partnership challenges of building a national commercial spaceport capability from the ground up.</p>
     </div>
   </div>
   <div id="segNavFooter"></div>
@@ -655,6 +655,26 @@ CONTENT['s5-7'] = () => `
         <span class="axis-num">PATTERN 03</span>
         <div class="axis-title">Normalization of Deviance</div>
         <div class="axis-body">As introduced in the quiz discussion, normalization of deviance is the gradual acceptance of procedural deviations as normal. In partnership context, it manifests as: both parties gradually accepting that standard protocols are not being followed, that required documentation is consistently incomplete, or that safety review commitments are met on paper but not in substance. The early indicators: fewer formal issues raised in safety reviews, shortening LRR meetings, declining participation in joint operations working groups. Prevention: explicit safety culture commitments in the agreement, leadership visibility in safety forums, and anomaly reporting that is rewarded rather than penalized.</div>
+      </div>
+      <div class="axis-card">
+        <span class="axis-num">PATTERN 04</span>
+        <div class="axis-title">Financial Stress Cascade</div>
+        <div class="axis-body">An operator experiencing financial pressure begins to defer obligations in predictable sequence: first non-core service payments, then maintenance and ground support fees, then infrastructure cost-sharing obligations, and finally launch fees themselves. Each deferral is individually explainable — budget cycle timing, contract dispute, system upgrade in progress — but the pattern reveals a deteriorating financial position that will eventually reach the launch fee itself. By the time the spaceport identifies the true issue, the operator may be in a capital crisis. Prevention: contractual rights to financial reporting, payment milestone tracking with automatic escalation triggers, and executive-level engagement at the first sign of pattern deference rather than waiting for a material default.</div>
+      </div>
+      <div class="axis-card">
+        <span class="axis-num">PATTERN 05</span>
+        <div class="axis-title">Communication Failure Under Pressure</div>
+        <div class="axis-body">When the operational relationship is running smoothly, communication cadence is maintained and issues surface early. When pressure increases — schedule compression, vehicle anomaly, regulatory investigation — communication typically degrades at the exact moment it is most needed. The operator's team becomes heads-down and stops sending routine updates; the spaceport team interprets silence as a problem signal and escalates; the operator experiences the escalation as distrust; the cycle reinforces itself until the communication breakdown becomes the primary obstacle rather than the original operational problem. Prevention: pre-agreed communication protocols for abnormal conditions — specifying who calls whom, how often, and what information is exchanged when the operation is outside normal parameters — negotiated before the pressure event, not during it.</div>
+      </div>
+      <div class="axis-card">
+        <span class="axis-num">PATTERN 06</span>
+        <div class="axis-title">Regulatory Relationship Deterioration</div>
+        <div class="axis-body">A partnership can erode through regulatory failures that are technically the operator's responsibility but that the spaceport absorbs politically. If an operator's licensing submissions are chronically late, their anomaly reports incomplete, or their compliance posture adversarial with the FAA, the spaceport's relationship with its primary regulator suffers — even though the spaceport is not the licensed party for the launch operation. The FAA's assessment of the spaceport as a professionally managed facility is affected by the quality of operations conducted there. Prevention: contractual requirements for the operator to notify the spaceport of any regulatory enforcement action or investigation, and executive engagement when the operator's regulatory relationship deteriorates to a level that creates reputational or licensing risk for the spaceport itself.</div>
+      </div>
+      <div class="axis-card">
+        <span class="axis-num">PATTERN 07</span>
+        <div class="axis-title">Scope Drift and Authority Erosion</div>
+        <div class="axis-body">Over time, an incumbent operator may gradually expand the scope of its activities at the spaceport beyond the terms of its agreement — occupying additional areas, directing facility staff on matters outside their operational responsibility, making modification requests directly to contractors rather than through the spaceport's project management process. Each instance is individually minor, but the cumulative effect is that the operator is functionally managing parts of the facility that the spaceport is contractually and regulatorily responsible for. The spaceport loses operational authority incrementally, which creates safety governance gaps and undermines its position in the relationship. Prevention: annual contract compliance reviews that compare actual operator footprint and conduct against contractual scope, with explicit conversation about any deviations — treating scope drift as a contract management issue rather than an operator courtesy.</div>
       </div>
     </div>
     <div class="callout callout-warning">

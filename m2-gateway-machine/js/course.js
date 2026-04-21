@@ -46,12 +46,12 @@ const CourseApp = (function() {
       lo: 'LO2.1',
       text: 'The three phases of spaceport launch operations are typically sequenced in which order?',
       options: [
-        { id: 'a', text: 'Launch day → Pre-launch preparation → Post-launch recovery and analysis.' },
-        { id: 'b', text: 'Pre-launch preparation → Launch day operations → Post-launch recovery and analysis.' },
+        { id: 'a', text: 'Pre-launch preparation → Launch day operations → Post-launch recovery and analysis.' },
+        { id: 'b', text: 'Launch day → Pre-launch preparation → Post-launch recovery and analysis.' },
         { id: 'c', text: 'Site readiness → Vehicle integration → Mission execution.' },
         { id: 'd', text: 'Range clearance → Pre-launch → Pad activation.' },
       ],
-      correct: 'b',
+      correct: 'a',
       rationale: 'Correct. The three-phase model follows: Pre-launch preparation (vehicle arrival through launch readiness review), Launch day operations (countdown, hold management, commit), and Post-launch recovery and analysis (pad inspection, anomaly review, mission outcome debrief, turnaround). This sequence governs everything from staffing plans to regulatory compliance timing.',
     },
     {
@@ -60,11 +60,11 @@ const CourseApp = (function() {
       text: 'A multi-user spaceport is hosting three launch operators simultaneously, each with active payload integrations and competing launch windows within the same 14-day period. What is the most significant structural challenge this creates for facility management?',
       options: [
         { id: 'a', text: 'Increased inspections required under FAA Part 420 when more than two operators are present.' },
-        { id: 'b', text: 'Governance of shared resources — airspace, pad access, propellant logistics, range safety scheduling — across competing commercial interests.' },
+        { id: 'b', text: 'Mandatory separation of all ground support equipment pools to prevent liability cross-contamination.' },
         { id: 'c', text: 'A requirement to appoint a separate Launch Director for each concurrent operator.' },
-        { id: 'd', text: 'Mandatory separation of all ground support equipment pools to prevent liability cross-contamination.' },
+        { id: 'd', text: 'Governance of shared resources — airspace, pad access, propellant logistics, range safety scheduling — across competing commercial interests.' },
       ],
-      correct: 'b',
+      correct: 'd',
       rationale: 'Correct. The defining challenge of multi-user operations is not regulatory or technical — it is governance. Shared resources (range safety assets, command and control systems, propellant infrastructure, pad access windows) must be allocated across operators with different launch readiness timelines, different customer commitments, and different risk tolerances. The absence of clear governance frameworks is the primary cause of multi-user spaceport operational disputes.',
     },
     {
@@ -86,11 +86,11 @@ const CourseApp = (function() {
       text: 'A commercial spaceport is considering contracting its Launch Director role to an external services firm to reduce fixed labor costs. Which risk is most significant and most commonly underweighted in this analysis?',
       options: [
         { id: 'a', text: 'Contractor Launch Directors are not recognized by the FAA under current licensing regulations.' },
-        { id: 'b', text: 'A contracted Launch Director may lack the safety culture and institutional memory that are embedded in a career operations professional — creating accountability gaps that are invisible until a near-miss or mishap.' },
-        { id: 'c', text: 'Contract staffing for the Launch Director role requires a separate Part 420 amendment, adding 18–24 months to the licensing process.' },
+        { id: 'b', text: 'Contract staffing for the Launch Director role requires a separate Part 420 amendment, adding 18–24 months to the licensing process.' },
+        { id: 'c', text: 'A contracted Launch Director may lack the safety culture and institutional memory that are embedded in a career operations professional — creating accountability gaps that are invisible until a near-miss or mishap.' },
         { id: 'd', text: 'Contractor Launch Directors typically decline to participate in anomaly investigation processes, creating regulatory non-compliance.' },
       ],
-      correct: 'b',
+      correct: 'c',
       rationale: 'Correct. The financial case for contracting out the Launch Director role often appears sound — the labor cost savings are real and quantifiable, while the safety culture risks are diffuse and hard to price. But the institutional memory and safety culture vested in a career Launch Director represent genuine operational value. A contractor accountable to a services agreement, rather than to the mission and its workforce, changes the decision-making environment in subtle but consequential ways. This is not a theoretical concern — it is a documented pattern in aviation outsourcing analysis and is increasingly recognized in launch operations.',
     },
     {
@@ -98,12 +98,12 @@ const CourseApp = (function() {
       lo: 'LO2.5',
       text: '"Normalization of deviance," as identified by sociologist Diane Vaughan in her analysis of the Challenger disaster, refers to which organizational phenomenon?',
       options: [
-        { id: 'a', text: 'The tendency of frontline workers to deliberately conceal safety anomalies from management to avoid delays.' },
-        { id: 'b', text: 'The gradual organizational process by which a known anomalous condition is repeatedly accepted as an acceptable risk, until it is no longer perceived as deviant.' },
+        { id: 'a', text: 'The gradual organizational process by which a known anomalous condition is repeatedly accepted as an acceptable risk, until it is no longer perceived as deviant.' },
+        { id: 'b', text: 'The tendency of frontline workers to deliberately conceal safety anomalies from management to avoid delays.' },
         { id: 'c', text: 'The structural failure that occurs when safety reporting systems allow anonymous submissions that undermine management accountability.' },
         { id: 'd', text: 'A pattern in which external regulators normalize deviation from certification standards in exchange for faster licensing timelines.' },
       ],
-      correct: 'b',
+      correct: 'a',
       rationale: 'Correct. Vaughan\'s concept of normalization of deviance describes how organizations incrementally accept known risk. In the Challenger case, O-ring erosion had been observed and documented across multiple flights. Rather than triggering escalating concern, each incident without catastrophic outcome was used to justify continued flight. The "deviant" condition (erosion) became routine. The organizational lesson — applicable directly to spaceport operations — is that the absence of immediate consequence does not constitute evidence of acceptable risk.',
     },
     {
@@ -112,11 +112,11 @@ const CourseApp = (function() {
       text: 'A launch operator targets a 24-hour turnaround for its reusable vehicle, compared to the industry\'s historical 6–18 month campaign cycle. What is the primary workforce implication of this operating model for the spaceport?',
       options: [
         { id: 'a', text: 'A 24-hour turnaround requires the spaceport to hire approximately 12× more range safety officers to cover continuous shifts.' },
-        { id: 'b', text: 'A continuous operations model requiring 24/7 staffing across all technical domains — rather than the traditional lumpy campaign model that allows workforce to surge and stand down between campaigns.' },
+        { id: 'b', text: 'The primary workforce implication is geographic — 24-hour turnaround requires on-site residential quarters for all technical staff.' },
         { id: 'c', text: 'FAA regulations require additional crew rest periods after every 10 launches that effectively prevent true 24-hour turnaround.' },
-        { id: 'd', text: 'The primary workforce implication is geographic — 24-hour turnaround requires on-site residential quarters for all technical staff.' },
+        { id: 'd', text: 'A continuous operations model requiring 24/7 staffing across all technical domains — rather than the traditional lumpy campaign model that allows workforce to surge and stand down between campaigns.' },
       ],
-      correct: 'b',
+      correct: 'd',
       rationale: 'Correct. The campaign model allowed spaceports to staff up for a launch campaign and draw down between events. The continuous operations model — demanded by reusable vehicle economics — requires sustained 24/7 coverage across propellant operations, pad maintenance, range safety, and ground support. This is a fundamentally different workforce architecture, not just a scheduling change. It requires different hiring profiles, different training pipelines, different shift structures, and significantly higher fixed labor costs.',
     },
     {
@@ -138,11 +138,11 @@ const CourseApp = (function() {
       text: 'During a post-launch debrief, a senior technician mentions that the procedure for connecting the propellant quick-disconnect has been "informally simplified" over the last six launches to save 20 minutes — and that no anomaly has resulted. What is the appropriate response from the operations leadership?',
       options: [
         { id: 'a', text: 'Accept the informal procedure change and update the formal operations manual to reflect current practice.' },
-        { id: 'b', text: 'Document the deviation in the anomaly log but allow the informal procedure to continue pending a formal review.' },
-        { id: 'c', text: 'Immediately suspend the informal procedure, restore the certified process, and treat this as a safety culture finding requiring root cause analysis — not just a procedure update.' },
+        { id: 'b', text: 'Immediately suspend the informal procedure, restore the certified process, and treat this as a safety culture finding requiring root cause analysis — not just a procedure update.' },
+        { id: 'c', text: 'Document the deviation in the anomaly log but allow the informal procedure to continue pending a formal review.' },
         { id: 'd', text: 'Conduct a risk analysis meeting and allow the informal procedure under a temporary waiver while awaiting formal change control approval.' },
       ],
-      correct: 'c',
+      correct: 'b',
       rationale: 'Correct. This scenario is a textbook example of normalization of deviance in progress. Six successful launches without consequence has led the team to treat an uncertified procedure as acceptable. The correct response is not risk analysis or waiver — it is immediate restoration of certified procedure and a safety culture investigation. The question is not whether the informal procedure is safe. The question is: what does the willingness to deviate from certified procedures without formal change control tell us about the safety culture? That question requires a root cause analysis, not a risk meeting.',
     },
   ];
@@ -836,7 +836,7 @@ CONTENT['s2-6'] = () => `
         </div>
       </div>
     </div>
-    <h2>What Effective Multi-User Governance Looks Like</html>
+    <h2>What Effective Multi-User Governance Looks Like</h2>
     <p>The best-performing multi-user spaceports share a common governance characteristic: they have separated the <em>facility management function</em> from the <em>launch operations function</em>. The facility authority sets and enforces shared rules (scheduling protocols, shared resource priority frameworks, environmental and safety standards). The launch operators manage their own operations within those rules. The interface is clear. The interface agreement is written. And — crucially — the facility authority has enforcement mechanisms that are not subject to operator override.</p>
     <p>This structure mirrors what airports figured out decades ago: the airport manages the airfield, sets the rules for taxi and runway use, and enforces them uniformly. The airlines manage their own aircraft operations within those rules. The airline with the most passengers on a given day does not get to tell ATC to delay other airlines' departures. That independence — of the infrastructure authority from the commercial operator — is what makes high-density multi-user operations possible.</p>
     <div class="callout callout-insight">
