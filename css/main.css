@@ -1390,3 +1390,411 @@ body {
   .hero-cta { flex-direction: column; align-items: center; }
   .seg-nav-footer { flex-direction: column; gap: var(--space-md); }
 }
+
+/* ════════════════════════════════════════════════════════════════
+   PHASE BLOCKS — structured numbered section display
+   Used in all course.js segments for phase/step sequences
+════════════════════════════════════════════════════════════════ */
+.phase-block {
+  margin: var(--space-lg) 0;
+  border: 1px solid var(--surface-2);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  transition: border-color 0.2s var(--ease);
+}
+
+.phase-block:hover { border-color: var(--surface-3); }
+
+.phase-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: 0.85rem var(--space-lg);
+  background: var(--surface-2);
+  border-bottom: 1px solid var(--surface-3);
+}
+
+.phase-num {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.16em;
+  color: var(--gold);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.phase-title {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: var(--white);
+}
+
+.phase-body {
+  padding: var(--space-lg) var(--space-xl);
+}
+
+.phase-body p {
+  font-size: 0.93rem;
+  color: var(--slate-light);
+  line-height: 1.75;
+  margin-bottom: var(--space-md);
+  max-width: none;
+}
+
+.phase-body p:last-child { margin-bottom: 0; }
+.phase-body p strong { color: var(--white); }
+
+.phase-body ul, .phase-body ol {
+  margin: 0 0 var(--space-md) var(--space-xl);
+}
+
+.phase-body li {
+  font-size: 0.93rem;
+  color: var(--slate-light);
+  line-height: 1.7;
+  margin-bottom: 0.4rem;
+}
+
+/* ════════════════════════════════════════════════════════════════
+   DOMAIN GRID — two-or-three column thematic card grid
+   Used for launch/range/gse domains and other category displays
+════════════════════════════════════════════════════════════════ */
+.domain-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-md);
+  margin: var(--space-xl) 0;
+}
+
+.domain-card {
+  padding: var(--space-lg);
+  border: 1px solid var(--surface-2);
+  border-radius: var(--r-lg);
+  background: var(--surface);
+  border-top: 3px solid var(--surface-3);
+  transition: border-color 0.2s var(--ease), background 0.2s var(--ease);
+}
+
+.domain-card:hover { background: var(--surface-2); }
+.domain-card.domain-launch { border-top-color: var(--gold); }
+.domain-card.domain-range  { border-top-color: var(--arctic); }
+.domain-card.domain-gse    { border-top-color: #8a7bc8; }
+
+.domain-label {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.14em;
+  color: var(--slate-dim);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.domain-card.domain-launch .domain-label { color: var(--gold-dim); }
+.domain-card.domain-range  .domain-label { color: var(--arctic-dim); }
+.domain-card.domain-gse    .domain-label { color: #5e4f9a; }
+
+.domain-title {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--white);
+  margin-bottom: var(--space-sm);
+}
+
+.domain-body {
+  font-size: 0.85rem;
+  color: var(--slate-light);
+  line-height: 1.65;
+}
+
+/* ════════════════════════════════════════════════════════════════
+   ANALYSIS QUESTIONS — case study discussion prompts
+════════════════════════════════════════════════════════════════ */
+.analysis-questions {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: var(--space-md);
+}
+
+.aq-item {
+  display: flex;
+  gap: var(--space-lg);
+  align-items: flex-start;
+  padding: var(--space-md) 0;
+  border-bottom: 1px solid var(--surface-3);
+}
+
+.aq-item:last-child { border-bottom: none; }
+
+.aq-num {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  color: var(--gold);
+  min-width: 1.8rem;
+  padding-top: 0.15rem;
+  flex-shrink: 0;
+}
+
+.aq-item p {
+  font-size: 0.92rem;
+  color: var(--slate-light);
+  line-height: 1.7;
+  margin-bottom: 0;
+  max-width: none;
+}
+
+/* ════════════════════════════════════════════════════════════════
+   MODULE NAVIGATION FOOTER — prev/next on module index pages
+════════════════════════════════════════════════════════════════ */
+.module-nav-footer {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem var(--space-xl);
+  background: var(--ink-2);
+  border-top: 1px solid var(--surface-2);
+}
+
+.module-nav-footer::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 15%; right: 15%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(201,168,76,0.25), transparent);
+  pointer-events: none;
+}
+
+.nav-prev, .nav-next {
+  font-size: 0.82rem;
+  color: var(--slate);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  transition: color 0.2s var(--ease);
+}
+
+.nav-prev:hover { color: var(--white); }
+.nav-next { color: var(--gold); }
+.nav-next:hover { color: var(--gold-light); }
+
+.nav-home {
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--slate-dim);
+  text-decoration: none;
+  transition: color 0.2s var(--ease);
+}
+
+.nav-home:hover { color: var(--slate); }
+
+/* ════════════════════════════════════════════════════════════════
+   SEGMENT NAV FOOTER wrapper (#segNavFooter)
+   Note: class .seg-nav-footer exists but HTML uses id
+════════════════════════════════════════════════════════════════ */
+#segNavFooter {
+  padding: var(--space-2xl) var(--space-xl);
+  border-top: 1px solid var(--surface-2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: var(--content-max);
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* ════════════════════════════════════════════════════════════════
+   FOOTER INNER — module page footer layout
+════════════════════════════════════════════════════════════════ */
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: var(--content-max);
+  margin: 0 auto;
+}
+
+.footer-back {
+  font-size: 0.8rem;
+  color: var(--slate);
+  text-decoration: none;
+  transition: color 0.2s var(--ease);
+}
+
+.footer-back:hover { color: var(--gold); }
+
+.footer-brand {
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  color: var(--slate-dim);
+  text-transform: uppercase;
+}
+
+/* ════════════════════════════════════════════════════════════════
+   DESIGN REFINEMENTS
+   Editorial authority, institutional weight, visual precision.
+   Specific overrides for generic/flat patterns.
+════════════════════════════════════════════════════════════════ */
+
+/* — Hero: fine measurement grid overlay ——————————————————————— */
+.landing-page .hero { position: relative; }
+
+.landing-page .hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    repeating-linear-gradient(
+      0deg, transparent, transparent 79px,
+      rgba(201,168,76,0.04) 79px, rgba(201,168,76,0.04) 80px),
+    repeating-linear-gradient(
+      90deg, transparent, transparent 119px,
+      rgba(201,168,76,0.03) 119px, rgba(201,168,76,0.03) 120px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.landing-page .hero > * { position: relative; z-index: 1; }
+
+/* — Segment header: gold left rule ————————————————————————————— */
+.seg-header {
+  position: relative;
+  padding-left: calc(var(--space-md) + 3px);
+}
+
+.seg-header::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: calc(var(--space-xl) + 0.5rem);
+  width: 2px;
+  background: linear-gradient(to bottom, var(--gold), rgba(201,168,76,0));
+}
+
+/* — h2: gold left accent instead of flat grey top rule ————————— */
+.seg-body h2 {
+  border-top: none;
+  border-left: 2px solid var(--gold-dim);
+  padding-top: 0;
+  padding-left: var(--space-md);
+  margin-top: var(--space-2xl);
+}
+
+/* — Pull quote: editorial opening mark ————————————————————————— */
+.pull-quote { position: relative; }
+
+.pull-quote::before {
+  content: '\201C';
+  font-family: var(--font-display);
+  font-size: 5rem;
+  line-height: 0.8;
+  color: var(--gold-dim);
+  opacity: 0.45;
+  position: absolute;
+  top: 0.25rem;
+  left: var(--space-md);
+  pointer-events: none;
+}
+
+/* — Sidebar active state: stronger highlight, gold name ————————— */
+.seg-item.active {
+  background: rgba(201, 168, 76, 0.1);
+}
+
+.seg-item.active .seg-name {
+  color: var(--gold-light);
+  font-weight: 500;
+}
+
+/* — Module row: directional left accent on hover ———————————————— */
+.module-row-active { position: relative; overflow: hidden; }
+
+.module-row-active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  bottom: 10px;
+  width: 2px;
+  background: var(--gold);
+  border-radius: 2px;
+  transform: scaleY(0);
+  transition: transform 0.25s var(--ease);
+  transform-origin: center;
+}
+
+.module-row-active:hover::after { transform: scaleY(1); }
+
+/* — Progress bar: more substantial ————————————————————————————— */
+.progress-bar { height: 4px; }
+
+/* — About card icon: framed, not raw emoji ————————————————————— */
+.about-icon {
+  font-size: 1rem;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(201,168,76,0.3);
+  border-radius: var(--r-sm);
+  background: rgba(201,168,76,0.06);
+  margin-bottom: var(--space-md);
+}
+
+/* — Nav logo: tighter letter-spacing for small-caps authority —— */
+.nav-logo-text { letter-spacing: 0.18em; }
+
+/* — Instructor initials: more refined ————————————————————————— */
+.instructor-initials {
+  background: rgba(91, 155, 213, 0.08);
+  border-color: rgba(91, 155, 213, 0.2);
+  font-weight: 300;
+  letter-spacing: 0.08em;
+}
+
+/* — Callout: stronger label contrast ——————————————————————————— */
+.callout-insight .callout-label { letter-spacing: 0.2em; }
+.callout-warning .callout-label { letter-spacing: 0.2em; }
+.callout-legal .callout-label   { letter-spacing: 0.2em; }
+
+/* — Knowledge check: tighter option typography ————————————————— */
+.kc-q-text {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--white);
+  letter-spacing: -0.01em;
+}
+
+.kc-option { line-height: 1.6; }
+
+.option-letter {
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+}
+
+/* ════════════════════════════════════════════════════════════════
+   RESPONSIVE ADDITIONS
+════════════════════════════════════════════════════════════════ */
+@media (max-width: 900px) {
+  .domain-grid { grid-template-columns: 1fr; }
+  .module-nav-footer { gap: var(--space-md); }
+}
+
+@media (max-width: 640px) {
+  .module-nav-footer {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--space-sm);
+  }
+  #segNavFooter { flex-direction: column; gap: var(--space-md); }
+  .pull-quote::before { display: none; }
+  .seg-header { padding-left: 0; }
+  .seg-header::before { display: none; }
+}
